@@ -1,11 +1,5 @@
 <div align="center">
 
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=CAFF3C&height=120&section=header&text=WHITEJACK5 -- DEVIREDDY BHARADWAJA REDDY&fontSize=28&fontColor=060D08&animation=fadeIn" alt="header"/>
-
-
-
-<img width="100%" src="assets/terminal-contributions.png" alt="Terminal-style GitHub contributions heatmap" />
-
 <br/>
 
 <img width="200" height="200" src="./assets/circle-demo.gif" alt="Devireddy Bharadwaja Reddy animated terminal raster portrait hero" />
@@ -194,16 +188,6 @@ Flask + SQLite QR generator with analytics for dynamic QR management.
 
 ---
 
-## `> trophy-case --display`
-
-<div align="center">
-
-<sub>Trophies hidden -- service requires payment. Your 7 repos will show trophies once unlocked.</sub>
-
-</div>
-
----
-
 ## `> activity-graph --timeline`
 
 <div align="center">
@@ -225,19 +209,6 @@ Flask + SQLite QR generator with analytics for dynamic QR management.
 <br/>
 
 <sub>Detailed cards hidden -- vercel is rate-limited. Use profile views above.</sub>
-
-</div>
-
----
-
-## `> ./snake-animation.sh`
-
-> Enable once: Add `.github/workflows/snake.yml` from `Platane/snk` - the snake appears after first Action run.
-
-<div align="center">
-
-<!-- Snake will appear after you enable Platane/snk workflow -->
-<sub>Snake animation hidden -- enable workflow at https://github.com/Platane/snk to generate it.</sub>
 
 </div>
 
