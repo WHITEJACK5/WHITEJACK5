@@ -222,6 +222,6 @@ Flask + SQLite QR generator with analytics for dynamic QR management.
 
 <br/><br/>
 
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&height=120&section=footer&color=CAFF3C&fontColor=060D08" alt="footer" />
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&height=120&section=footer&color=CAFF3C&text=WHITEJACK5%20--%20DEVIREDDY%20BHARADWAJA%20REDDY&fontSize=18&fontColor=060D08" alt="footer" />
 
 </div>
