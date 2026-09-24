@@ -184,12 +184,11 @@ Flask + SQLite QR generator with analytics for dynamic QR management.
 
 <div align="center">
 
-<img height="165" src="https://github-readme-stats.vercel.app/api?username=WHITEJACK5&show_icons=true&count_private=true&hide_border=true&title_color=CAFF3C&icon_color=CAFF3C&text_color=E8F5E1&bg_color=0A0F08" alt="stats" />
-<img height="165" src="https://github-readme-streak-stats.herokuapp.com/?user=WHITEJACK5&hide_border=true&background=0A0F08&stroke=CAFF3C&ring=CAFF3C&fire=CAFF3C&currStreakLabel=CAFF3C&sideLabels=CAFF3C&dates=CAFF3C&currStreakNum=CAFF3C&sideNums=CAFF3C" alt="streak" />
+<img src="https://github-readme-streak-stats.herokuapp.com/?user=WHITEJACK5&hide_border=true&background=0A0F08&stroke=CAFF3C&ring=CAFF3C&fire=CAFF3C&currStreakLabel=CAFF3C&sideLabels=CAFF3C&dates=CAFF3C&currStreakNum=CAFF3C&sideNums=CAFF3C" alt="streak" />
 
 <br/>
 
-<img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=WHITEJACK5&layout=compact&hide_border=true&langs_count=8&title_color=CAFF3C&text_color=E8F5E1&bg_color=0A0F08" alt="top-langs" />
+<sub>Stats temporarily hidden -- vercel is rate-limited for new accounts. Streak is live.</sub>
 
 </div>
 
@@ -199,7 +198,7 @@ Flask + SQLite QR generator with analytics for dynamic QR management.
 
 <div align="center">
 
-<img src="https://github-profile-trophy.vercel.app/?username=WHITEJACK5&theme=matrix&no-frame=true&no-bg=true&margin-w=4&column=7" alt="trophies" />
+<sub>Trophies hidden -- service requires payment. Your 7 repos will show trophies once unlocked.</sub>
 
 </div>
 
@@ -209,7 +208,7 @@ Flask + SQLite QR generator with analytics for dynamic QR management.
 
 <div align="center">
 
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=WHITEJACK5&bg_color=0A0F08&color=CAFF3C&line=CAFF3C&point=CAFF3C&area=true&area_color=1A2B0A&hide_border=true" alt="activity-graph" />
+<sub>Activity graph hidden -- service requires payment. Use streak above for live activity.</sub>
 
 </div>
 
@@ -219,11 +218,13 @@ Flask + SQLite QR generator with analytics for dynamic QR management.
 
 <div align="center">
 
-<img src="https://github-readme-stats.vercel.app/api?username=WHITEJACK5&show_icons=true&count_private=true&hide_border=true&title_color=CAFF3C&icon_color=CAFF3C&text_color=E8F5E1&bg_color=0A0F08" alt="stats-card" />
+<img src="https://komarev.com/ghpvc/?username=WHITEJACK5&style=flat-square&color=CAFF3C&labelColor=060D08&label=Profile+Views" alt="views" />
+<img src="https://img.shields.io/github/followers/WHITEJACK5?style=flat-square&color=CAFF3C&labelColor=060D08&logo=github&label=Followers" alt="followers" />
+<img src="https://img.shields.io/github/stars/WHITEJACK5?style=flat-square&color=CAFF3C&labelColor=060D08&logo=github&label=Stars" alt="stars" />
 
 <br/>
 
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=WHITEJACK5&layout=compact&hide_border=true&langs_count=8&title_color=CAFF3C&text_color=E8F5E1&bg_color=0A0F08" alt="top-langs"/>
+<sub>Detailed cards hidden -- vercel is rate-limited. Use profile views above.</sub>
 
 </div>
 
@@ -235,7 +236,8 @@ Flask + SQLite QR generator with analytics for dynamic QR management.
 
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/WHITEJACK5/WHITEJACK5/output/github-contribution-grid-snake-dark.svg" alt="snake" />
+<!-- Snake will appear after you enable Platane/snk workflow -->
+<sub>Snake animation hidden -- enable workflow at https://github.com/Platane/snk to generate it.</sub>
 
 </div>
 
