@@ -1,19 +1,14 @@
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0A0A0A&height=120&section=header&text=WHITEJACK5%20—%20DEVIREDDY%20BHARADWAJA%20REDDY&fontSize=28&fontColor=39FF14&animation=fadeIn" width="100%" alt="WHITEJACK5 Header"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=00F5D4&height=120&section=header&text=WHITEJACK5%20—%20DEVIREDDY%20BHARADWAJA%20REDDY&fontSize=28&fontColor=ffffff&animation=fadeIn" width="100%" alt="WHITEJACK5 Header"/>
 
 <p align="center">
-  <img src="./assets/demo.gif" width="220" height="220" style="border-radius:50%; object-fit:cover; border:4px solid #39FF14; background:#0A0A0A;" alt="Demo GIF"/>
-</p>
-
-<p align="center">
-  <a href="https://github.com/WHITEJACK5"><img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=22&duration=3000&pause=1000&color=39FF14&center=true&vCenter=true&width=600&lines=Applied+AI+Engineer;Full-Stack+Builder;Fraud+Intelligence+Builder" alt="Typing"/></a>
+  <a href="https://github.com/WHITEJACK5"><img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=22&duration=3000&pause=1000&color=00F5D4&center=true&vCenter=true&width=600&lines=Applied+AI+Engineer;Full-Stack+Builder;Fraud+Intelligence+Builder" alt="Typing"/></a>
 </p>
 
 <h3 align="center">Building explainable AI systems, risk intelligence and full-stack products</h3>
 
 <p align="center">
-  <a href="https://github.com/WHITEJACK5"><img src="https://img.shields.io/badge/GitHub-WHITEJACK5-0A0A0A?style=for-the-badge&logo=github&logoColor=39FF14" alt="GitHub"/></a>
-  <a href="https://www.linkedin.com/in/devireddybharadwaja/"><img src="https://img.shields.io/badge/LinkedIn-Connect-39FF14?style=for-the-badge&logo=linkedin&logoColor=0A0A0A" alt="LinkedIn"/></a>
-  <img src="https://img.shields.io/badge/Focus-Risk_Intelligence-0A0A0A?style=for-the-badge&logoColor=39FF14" alt="Risk Intelligence"/>
+  <a href="https://github.com/WHITEJACK5"><img src="https://img.shields.io/badge/GitHub-WHITEJACK5-181717?style=for-the-badge&logo=github" alt="GitHub"/></a>
+  <a href="https://www.linkedin.com/in/devireddybharadwaja/"><img src="https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin" alt="LinkedIn"/></a>
 </p>
 
 ---
@@ -23,6 +18,7 @@
 I'm **Devireddy Bharadwaja Reddy** — focused on **Applied AI, Machine Learning, and Full-Stack Development**. I like turning complex data and product ideas into measurable, explainable systems.
 
 - Building at the intersection of **ML / Risk Intelligence / APIs / Product**
+- Strong on **Python, JavaScript, System Design**
 - Approach: **Build → Test → Measure → Ship**
 
 ---
@@ -30,41 +26,17 @@ I'm **Devireddy Bharadwaja Reddy** — focused on **Applied AI, Machine Learning
 ### Tech Stack
 
 <p>
-<img src="https://img.shields.io/badge/Python-0A0A0A?style=for-the-badge&logo=python&logoColor=39FF14" alt="Python"/>
-<img src="https://img.shields.io/badge/Java-FFFFFF?style=for-the-badge&logo=openjdk&logoColor=0A0A0A" alt="Java"/>
-<img src="https://img.shields.io/badge/HTML5-0A0A0A?style=for-the-badge&logo=html5&logoColor=FFFFFF" alt="HTML"/>
-<img src="https://img.shields.io/badge/JavaScript-39FF14?style=for-the-badge&logo=javascript&logoColor=0A0A0A" alt="JavaScript"/>
-<img src="https://img.shields.io/badge/TypeScript-39FF14?style=for-the-badge&logo=typescript&logoColor=0A0A0A" alt="TypeScript"/>
-<img src="https://img.shields.io/badge/CSS3-FFFFFF?style=for-the-badge&logo=css3&logoColor=0A0A0A" alt="CSS"/>
-<img src="https://img.shields.io/badge/C++-0A0A0A?style=for-the-badge&logo=cplusplus&logoColor=FFFFFF" alt="C++"/>
-<img src="https://img.shields.io/badge/Jupyter-39FF14?style=for-the-badge&logo=jupyter&logoColor=0A0A0A" alt="Jupyter"/>
-</p>
-
-<p>
-<img src="https://img.shields.io/badge/FastAPI-0A0A0A?style=for-the-badge&logo=fastapi&logoColor=39FF14" alt="FastAPI"/>
-<img src="https://img.shields.io/badge/Flask-FFFFFF?style=for-the-badge&logo=flask&logoColor=0A0A0A" alt="Flask"/>
-<img src="https://img.shields.io/badge/Next.js-0A0A0A?style=for-the-badge&logo=nextdotjs&logoColor=FFFFFF" alt="Next.js"/>
-<img src="https://img.shields.io/badge/React-39FF14?style=for-the-badge&logo=react&logoColor=0A0A0A" alt="React"/>
-<img src="https://img.shields.io/badge/Node.js-0A0A0A?style=for-the-badge&logo=nodedotjs&logoColor=39FF14" alt="Node.js"/>
-<img src="https://img.shields.io/badge/Express-FFFFFF?style=for-the-badge&logo=express&logoColor=0A0A0A" alt="Express"/>
-<img src="https://img.shields.io/badge/Tailwind_CSS-0A0A0A?style=for-the-badge&logo=tailwindcss&logoColor=39FF14" alt="Tailwind"/>
-</p>
-
-<p>
-<img src="https://img.shields.io/badge/XGBoost-0A0A0A?style=for-the-badge&logoColor=39FF14" alt="XGBoost"/>
-<img src="https://img.shields.io/badge/LightGBM-39FF14?style=for-the-badge&logoColor=0A0A0A" alt="LightGBM"/>
-<img src="https://img.shields.io/badge/SHAP-FFFFFF?style=for-the-badge&logoColor=0A0A0A" alt="SHAP"/>
-<img src="https://img.shields.io/badge/MLflow-0A0A0A?style=for-the-badge&logo=mlflow&logoColor=39FF14" alt="MLflow"/>
-<img src="https://img.shields.io/badge/scikit_learn-39FF14?style=for-the-badge&logo=scikitlearn&logoColor=0A0A0A" alt="scikit-learn"/>
-</p>
-
-<p>
-<img src="https://img.shields.io/badge/PostgreSQL-0A0A0A?style=for-the-badge&logo=postgresql&logoColor=FFFFFF" alt="PostgreSQL"/>
-<img src="https://img.shields.io/badge/MongoDB-FFFFFF?style=for-the-badge&logo=mongodb&logoColor=0A0A0A" alt="MongoDB"/>
-<img src="https://img.shields.io/badge/SQLite-0A0A0A?style=for-the-badge&logo=sqlite&logoColor=39FF14" alt="SQLite"/>
-<img src="https://img.shields.io/badge/Prisma-39FF14?style=for-the-badge&logo=prisma&logoColor=0A0A0A" alt="Prisma"/>
-<img src="https://img.shields.io/badge/Docker-0A0A0A?style=for-the-badge&logo=docker&logoColor=39FF14" alt="Docker"/>
-<img src="https://img.shields.io/badge/GitHub_Actions-FFFFFF?style=for-the-badge&logo=githubactions&logoColor=0A0A0A" alt="GitHub Actions"/>
+<img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python"/>
+<img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=000" alt="JavaScript"/>
+<img src="https://img.shields.io/badge/Java-ED8B00?style=flat-square&logo=openjdk&logoColor=white" alt="Java"/>
+<img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript"/>
+<img src="https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white" alt="FastAPI"/>
+<img src="https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white" alt="Next.js"/>
+<img src="https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB" alt="React"/>
+<img src="https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white" alt="Node.js"/>
+<img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white" alt="PostgreSQL"/>
+<img src="https://img.shields.io/badge/MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white" alt="MongoDB"/>
+<img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white" alt="Docker"/>
 </p>
 
 ---
@@ -83,20 +55,19 @@ I'm **Devireddy Bharadwaja Reddy** — focused on **Applied AI, Machine Learning
 ### GitHub Analytics
 
 <p align="center">
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=WHITEJACK5&theme=github_dark" alt="Profile Details" />
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=WHITEJACK5&theme=tokyonight" alt="Profile Details" />
 </p>
 <p align="center">
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=WHITEJACK5&theme=github_dark" alt="Top Languages" />
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=WHITEJACK5&theme=github_dark" alt="Stats" />
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=WHITEJACK5&theme=tokyonight" alt="Top Languages" />
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=WHITEJACK5&theme=tokyonight" alt="Stats" />
 </p>
 
 ---
 
 ### Let's Connect
 
-<p align="center">
-<a href="https://github.com/WHITEJACK5"><img src="https://img.shields.io/badge/GitHub-WHITEJACK5-0A0A0A?style=for-the-badge&logo=github&logoColor=39FF14" alt="GitHub"/></a>
-<a href="https://www.linkedin.com/in/devireddybharadwaja/"><img src="https://img.shields.io/badge/LinkedIn-devireddybharadwaja-39FF14?style=for-the-badge&logo=linkedin&logoColor=0A0A0A" alt="LinkedIn"/></a>
-</p>
+If you work on AI systems, risk tech, or product — let's talk.
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=39FF14&height=100&section=footer&text=BUILDING%20IN%20PUBLIC&fontSize=16&fontColor=0A0A0A" width="100%" alt="Footer"/>
+**GitHub:** github.com/WHITEJACK5 · **LinkedIn:** linkedin.com/in/devireddybharadwaja
+
+<img src="https://capsule-render.vercel.app/api?type=waving&color=00F5D4&height=100&section=footer&text=BUILDING%20IN%20PUBLIC&fontSize=16&fontColor=ffffff" width="100%" alt="Footer"/>
