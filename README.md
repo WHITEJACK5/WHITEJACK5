@@ -1,5 +1,9 @@
 <div align="center">
 
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=CAFF3C&height=120&section=header&text=WHITEJACK5 -- DEVIREDDY BHARADWAJA REDDY&fontSize=28&fontColor=060D08&animation=fadeIn" alt="header"/>
+
+
+
 <img width="100%" src="assets/terminal-contributions.png" alt="Terminal-style GitHub contributions heatmap" />
 
 <br/>
@@ -215,23 +219,19 @@ Flask + SQLite QR generator with analytics for dynamic QR management.
 
 <div align="center">
 
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=WHITEJACK5&theme=2077" width="100%" alt="profile-details" />
+<img src="https://github-readme-stats.vercel.app/api?username=WHITEJACK5&show_icons=true&count_private=true&hide_border=true&title_color=CAFF3C&icon_color=CAFF3C&text_color=E8F5E1&bg_color=0A0F08" alt="stats-card" />
 
 <br/>
 
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=WHITEJACK5&theme=2077" alt="repos-per-language" />&nbsp;
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=WHITEJACK5&theme=2077" alt="most-commit-language" />
-
-<br/>
-
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=WHITEJACK5&theme=2077" alt="stats-card" />&nbsp;
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=WHITEJACK5&theme=2077&utcOffset=5.5" alt="productive-time" />
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=WHITEJACK5&layout=compact&hide_border=true&langs_count=8&title_color=CAFF3C&text_color=E8F5E1&bg_color=0A0F08" alt="top-langs"/>
 
 </div>
 
 ---
 
 ## `> ./snake-animation.sh`
+
+> Enable once: Add `.github/workflows/snake.yml` from `Platane/snk` - the snake appears after first Action run.
 
 <div align="center">
 
@@ -281,6 +281,6 @@ open_to:
 
 <br/><br/>
 
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&height=120&section=footer&color=0a0f08&fontColor=CAFF3C" alt="footer" />
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&height=120&section=footer&color=CAFF3C&fontColor=060D08" alt="footer" />
 
 </div>
