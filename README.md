@@ -188,16 +188,6 @@ Flask + SQLite QR generator with analytics for dynamic QR management.
 
 ---
 
-## `> activity-graph --timeline`
-
-<div align="center">
-
-<sub>Activity graph hidden -- service requires payment. Use streak above for live activity.</sub>
-
-</div>
-
----
-
 ## `> contribution-report --detailed`
 
 <div align="center">
@@ -211,28 +201,6 @@ Flask + SQLite QR generator with analytics for dynamic QR management.
 <sub>Detailed cards hidden -- vercel is rate-limited. Use profile views above.</sub>
 
 </div>
-
----
-
-## `> cat current-focus.yaml`
-
-```yaml
-learning:
-  - Explainable AI & Graph-based fraud detection
-  - Calibrated ML & profit-aware decisioning
-
-building:
-  - TRACER  # Real-time mule-ring defense
-  - loan-default-risk  # PD + profit policy
-
-exploring:
-  - AI-native product engineering
-  - Risk intelligence at scale
-
-open_to:
-  - Applied AI / ML Engineering
-  - Full-Stack Product Roles
-```
 
 ---
 
