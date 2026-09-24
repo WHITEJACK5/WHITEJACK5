@@ -1,3 +1,4 @@
+<img width="260" height="260" alt="b1xn4k" src="https://github.com/user-attachments/assets/30980df0-79b3-44f0-be70-732be8fa7e2f" />
 <img src="https://capsule-render.vercel.app/api?type=waving&color=00F5D4&height=120&section=header&text=WHITEJACK5%20—%20DEVIREDDY%20BHARADWAJA%20REDDY&fontSize=28&fontColor=ffffff&animation=fadeIn" width="100%" alt="WHITEJACK5 Header"/>
 
 <p align="center">
