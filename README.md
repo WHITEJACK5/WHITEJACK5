@@ -192,13 +192,17 @@ Flask + SQLite QR generator with analytics for dynamic QR management.
 
 <div align="center">
 
-<img src="https://komarev.com/ghpvc/?username=WHITEJACK5&style=flat-square&color=CAFF3C&labelColor=060D08&label=Profile+Views" alt="views" />
-<img src="https://img.shields.io/github/followers/WHITEJACK5?style=flat-square&color=CAFF3C&labelColor=060D08&logo=github&label=Followers" alt="followers" />
-<img src="https://img.shields.io/github/stars/WHITEJACK5?style=flat-square&color=CAFF3C&labelColor=060D08&logo=github&label=Stars" alt="stars" />
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=WHITEJACK5&theme=2077" width="100%" alt="profile-details" />
 
 <br/>
 
-<sub>Detailed cards hidden -- vercel is rate-limited. Use profile views above.</sub>
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=WHITEJACK5&theme=2077" alt="repos-per-language" />&nbsp;
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=WHITEJACK5&theme=2077" alt="most-commit-language" />
+
+<br/>
+
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=WHITEJACK5&theme=2077" alt="stats-card" />&nbsp;
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=WHITEJACK5&theme=2077&utcOffset=5.5" alt="productive-time" />
 
 </div>
 
