@@ -131,15 +131,14 @@ def hero(days, totals) -> str:
     sparse and discrete, so a line through 0,0,11,0 would claim values that
     never existed.
     """
-    w, h = 520, 150
-    years = totals["years"]
+    w, h = 520, 170
     s = svg_open(w, h, "Contribution totals and weekly trend", ("basic-regular", "basic-bold"))
-    s += t(20, 40, f"{totals['total']:,}", 34, weight=700)
-    s += t(20, 62, "contributions in the last year", 12, cls="d")
-    s += t(20, 92, f"{len(years)}* active years on GitHub", 11, cls="d")
+    s += t(20, 42, f"{totals['total']:,}", 34, weight=700)
+    s += t(20, 64, "contributions in the last year", 12, cls="d")
+    s += t(20, 86, f"{totals['active_days']} active days", 12, cls="d")
 
     weeks = totals["weeks"]
-    x0, y0, ww, hh = 20, 100, w - 40, 34
+    x0, y0, ww, hh = 20, 104, w - 40, 34
     top = max(weeks) or 1
     bw = ww / len(weeks)
     for i, v in enumerate(weeks):
@@ -148,7 +147,8 @@ def hero(days, totals) -> str:
             f'<rect x="{x0 + i * bw:.2f}" y="{y0 + hh - bh:.2f}" '
             f'width="{max(1.0, bw - 1.5):.2f}" height="{bh:.2f}" fill="{DIM}"/>'
         )
-    s += t(x0, y0 - 4, f"weekly peak {top}", 10, cls="d")
+    # label below the baseline so it cannot collide with the bars
+    s += t(x0, y0 + hh + 18, f"weekly peak {top}", 10, cls="d")
     s += "</svg>"
     return s
 
@@ -267,15 +267,43 @@ def year_svg(days) -> str:
     top = max(counts) or 1
     top_idx = len(RAMP) - 1
 
+    weeks = 53
+    cw, ch = 9, 11
+    pad = 20
+    w = pad * 2 + weeks * cw
+    h = pad * 2 + 7 * ch
+    s = svg_open(w, h, "Contribution calendar, one character per day",
+                 ("basic-regular", "basic-bold"))
+
+    counts = [d["count"] for d in days]
+    top = max(counts) or 1
+    top_idx = len(RAMP) - 1
+
     dows = ["Mon", "", "Wed", "", "Fri", "", "Sun"]
     for r, label in enumerate(dows):
         if label:
             s += t(pad - 6, pad + r * ch + 8, label, 9, cls="d", anchor="end")
 
-    # cells[row][col]
+    # Anchor the grid to the real calendar: row = weekday (Mon=0), column =
+    # week number. Deriving the offset from the first day's weekday is what
+    # keeps the month labels honest - assuming 7 cells per column from index 0
+    # silently shifts every month by a few days.
+    first = dt.date.fromisoformat(days[0]["date"])
+    offset = first.weekday()  # Monday=0
+
     cells = [[] for _ in range(7)]
+    month_marks = []  # (column, label) for the first day of each month
+    prev_month = None
+    prev_year = None
+
     for i, d in enumerate(days):
-        col, row = i // 7, i % 7
+        date = dt.date.fromisoformat(days[i]["date"])
+        if date.month != prev_month or date.year != prev_year:
+            month_marks.append(((i + offset) // 7, date.strftime("%b")))
+            prev_month, prev_year = date.month, date.year
+
+        col = (i + offset) // 7
+        row = (i + offset) % 7
         v = d["count"]
         if v == 0:
             ch_ = " "
@@ -303,12 +331,19 @@ def year_svg(days) -> str:
             f'xml:space="preserve">{"".join(spans)}</text>'
         )
 
-    months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul",
-              "Aug", "Sep", "Oct", "Nov", "Dec"]
-    for c in range(0, 53, 4):
-        m = int(c // 4.345)
-        if m < 12:
-            s += t(pad + c * cw, pad - 6, months[m], 9, cls="d")
+    # One label per month at the column where it actually starts. A 365-day
+    # window can straddle a year boundary (Sep -> Sep), which legitimately puts
+    # the same month name twice; disambiguate the later one with its year
+    # instead of hiding it.
+    last_x = -99
+    for col, label in month_marks:
+        x = pad + col * cw
+        if col >= weeks or x <= last_x + 18:  # 18px ~= 3 chars at 9px
+            continue
+        s += t(x, pad - 6, label, 9, cls="d")
+        last_x = x
+    s += t(w - 20, pad - 6, str(dt.date.fromisoformat(days[-1]["date"]).year),
+           9, cls="d", anchor="end")
     s += "</svg>"
     return s
 
@@ -433,7 +468,7 @@ def main() -> None:
 
     totals = {
         "total": cal["totalContributions"],
-        "years": who,
+        "active_days": sum(1 for d in days if d["count"] > 0),
         "weeks": weekly(days),
     }
 

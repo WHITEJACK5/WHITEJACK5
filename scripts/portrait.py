@@ -162,30 +162,25 @@ def build_svg(lines: list[str]) -> str:
 
     for i, line in enumerate(lines):
         begin = round(i * stagger, 3)
+        y = round(i * ROW_H, 2)
+        # The clip rect must be positioned at THIS row's own y. Leaving it at
+        # y="0" means every row is clipped to the same 6px band at the top of
+        # the image, so the portrait renders as an almost invisible sliver.
+        #
+        # The width attribute carries the FINAL value, not 0, so that if SMIL is
+        # blocked or unsupported the clip is already fully open and the portrait
+        # still renders - it simply does not animate.
         parts.append(
             f'<clipPath id="c{i}">'
-            f'<rect x="0" y="0" height="{ROW_H}" width="0">'
+            f'<rect x="0" y="{y}" height="{ROW_H}" width="{w}">'
             f'<animate attributeName="width" from="0" to="{w}" '
             f'dur="0.55s" begin="{begin}s" fill="freeze"/>'
-            f'<animate attributeName="height" from="0" to="{ROW_H}" '
-            f'begin="{begin}s" dur="0.01s" fill="freeze"/>'
             f"</rect></clipPath>"
         )
         parts.append(
-            f'<text x="0" y="{round(i * ROW_H, 2)}" clip-path="url(#c{i})" '
+            f'<text x="0" y="{y}" clip-path="url(#c{i})" '
             f'textLength="{w}" lengthAdjust="spacingAndGlyphs" '
             f'font-size="{FONT_PX}">{escape(line)}</text>'
-        )
-        # cursor riding the wipe edge
-        parts.append(
-            f'<rect class="cursor" x="0" y="{round(i * ROW_H, 2)}" '
-            f'width="{CHAR_W}" height="{ROW_H}" opacity="0">'
-            f'<set attributeName="opacity" to="1" begin="{begin}s" dur="0.01s"/>'
-            f'<set attributeName="opacity" to="0" begin="{round(begin + 0.5, 3)}s" '
-            f'dur="0.01s"/>'
-            f'<animate attributeName="x" from="0" to="{w}" dur="0.55s" '
-            f'begin="{begin}s" fill="freeze"/>'
-            f"</rect>"
         )
 
     parts.append("</svg>")
