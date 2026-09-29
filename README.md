@@ -4,9 +4,9 @@
 
 <br/>
 
-<img src="https://img.shields.io/badge/GitHub-WHITEJACK5-0A0A0A?style=for-the-badge&logo=github&logoColor=39FF14" alt="GitHub" />
-<img src="https://img.shields.io/badge/LinkedIn-Connect-39FF14?style=for-the-badge&logo=linkedin&logoColor=0A0A0A" alt="LinkedIn" />
-<img src="https://img.shields.io/badge/Applied%20AI%20%2F%20Full-Stack-0A0A0A?style=for-the-badge&logoColor=39FF14" alt="Focus" />
+<samp>GitHub</samp> `@WHITEJACK5` &nbsp;&middot;&nbsp;
+<samp>LinkedIn</samp> `/in/devireddybharadwaja` &nbsp;&middot;&nbsp;
+<samp>Focus</samp> `Applied AI / Full-Stack`
 
 </div>
 
@@ -136,7 +136,7 @@ database that initialises itself on first run.
 
 ---
 
-<img src="./hd/stats.svg" width="520" alt="Contribution totals" />
+<img src="./stats.svg" width="520" alt="Contribution totals" />
 
 <br/>
 
@@ -163,12 +163,13 @@ between neighbours.</sub>
 
 <div align="center">
 
-<a href="https://github.com/WHITEJACK5"><img src="https://img.shields.io/badge/GitHub-39FF14?style=for-the-badge&logo=github&logoColor=0A0A0A" alt="GitHub" /></a>
-<a href="https://www.linkedin.com/in/devireddybharadwaja"><img src="https://img.shields.io/badge/LinkedIn-0A0A0A?style=for-the-badge&logo=linkedin&logoColor=39FF14" alt="LinkedIn" /></a>
+<a href="https://github.com/WHITEJACK5"><samp>github.com/WHITEJACK5</samp></a>
+&nbsp;&nbsp;&middot;&nbsp;&nbsp;
+<a href="https://www.linkedin.com/in/devireddybharadwaja"><samp>linkedin.com/in/devireddybharadwaja</samp></a>
 
 <br/><br/>
 
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&height=100&section=footer&color=0a0f08&fontColor=39FF14&text=WHITEJACK5%20--%20DEVIREDDY%20BHARADWAJA%20REDDY" alt="footer" />
+<samp>WHITEJACK5 -- DEVIREDDY BHARADWAJA REDDY</samp>
 
 </div>
 
