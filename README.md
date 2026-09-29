@@ -55,10 +55,6 @@ calibrated models, and the interfaces that make them usable.
 I care about the parts that are easy to skip: reproducible evaluation, honest
 model limits, and documentation that matches what the code actually does.
 
-> A profile README is the one page where a broken image is most expensive.
-> Every graphic below is generated inside this repository by a scheduled
-> action. The page makes **zero** third-party requests.
-
 ---
 
 <img src="./hd/tech-stack.svg" width="900" alt="tech-stack" />
