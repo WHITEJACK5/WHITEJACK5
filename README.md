@@ -1,117 +1,64 @@
 <div align="center">
 
-<br/>
-
-<img width="200" height="200" src="./assets/circle-demo.gif" alt="Devireddy Bharadwaja Reddy animated terminal raster portrait hero" />
+<img src="./portrait.svg" width="460" alt="Self-typing ASCII portrait of Bharadwaja Reddy" />
 
 <br/>
 
-<img src="https://img.shields.io/badge/Builder-Applied%20AI%20Systems-CAFF3C?style=flat-square&labelColor=060D08&color=1A2B1A&logo=rocket&logoColor=CAFF3C" alt="focus" />
-<img src="https://img.shields.io/badge/%F0%9F%93%8D_India-1A2B1A?style=flat-square&labelColor=060D08&logoColor=CAFF3C" alt="location" />
-<img src="https://img.shields.io/badge/%40futurebug5-Instagram-CAFF3C?style=flat-square&logo=instagram&logoColor=000000&labelColor=060D08" alt="instagram" />
-
-<br/><br/>
-
-<a href="https://www.linkedin.com/in/devireddybharadwaja"><img src="https://img.shields.io/badge/LinkedIn-CAFF3C?style=for-the-badge&logo=linkedin&logoColor=000000&labelColor=060D08" alt="linkedin" /></a>
-<a href="https://github.com/WHITEJACK5"><img src="https://img.shields.io/badge/GitHub-CAFF3C?style=for-the-badge&logo=github&logoColor=000000&labelColor=060D08" alt="github" /></a>
-
-<br/><br/>
-
-<img src="https://komarev.com/ghpvc/?username=WHITEJACK5&style=flat-square&color=CAFF3C&labelColor=060D08&label=Profile+Views" alt="views" />
-<img src="https://img.shields.io/github/followers/WHITEJACK5?style=flat-square&color=CAFF3C&labelColor=060D08&logo=github&label=Followers" alt="followers" />
-<img src="https://img.shields.io/github/stars/WHITEJACK5?style=flat-square&color=CAFF3C&labelColor=060D08&logo=github&label=Stars" alt="stars" />
+<img src="https://img.shields.io/badge/GitHub-WHITEJACK5-0A0A0A?style=for-the-badge&logo=github&logoColor=39FF14" alt="GitHub" />
+<img src="https://img.shields.io/badge/LinkedIn-Connect-39FF14?style=for-the-badge&logo=linkedin&logoColor=0A0A0A" alt="LinkedIn" />
+<img src="https://img.shields.io/badge/Applied%20AI%20%2F%20Full-Stack-0A0A0A?style=for-the-badge&logoColor=39FF14" alt="Focus" />
 
 </div>
 
 ---
 
-## `> whoami`
+<img src="./hd/whoami.svg" width="900" alt="whoami" />
 
-Building **explainable AI systems, risk intelligence and full-stack products**. Focused on turning complex data + product ideas into measurable, explainable systems with Python, JavaScript and modern product stacks.
+Applied AI engineer and full-stack builder. I turn messy data and product ideas
+into systems that are measurable and explainable &mdash; fraud risk engines,
+calibrated models, and the interfaces that make them usable.
 
-```bash
-$ cat .profile
+I care about the parts that are easy to skip: reproducible evaluation, honest
+model limits, and documentation that matches what the code actually does.
 
-ROLE        =  Applied AI Engineer / Full-Stack Builder
-EXP         =  Building in Public
-DOMAIN      =  Risk Intelligence | AI Systems | Product Engineering
-SECURITY    =  Explainable ML | Graph Detection | SHAP | Calibrated Models
-SIDE_BUILD  =  TRACER | loan-default-risk | white-collars | DYNAMIC-QR
-LOCATION    =  India
-OPEN_TO     =  Applied AI / ML Engineering + Product Roles
-```
+> A profile README is the one page where a broken image is most expensive.
+> Every graphic below is generated inside this repository by a scheduled
+> action. The page makes **zero** third-party requests.
 
 ---
 
-## `> ls /tech-stack`
+<img src="./hd/tech-stack.svg" width="900" alt="tech-stack" />
 
-<div align="center">
+<samp>Languages</samp> `Python` `JavaScript` `TypeScript` `Java` `SQL` `Bash`
 
-**[ Languages ]**
+<samp>AI / ML</samp> `XGBoost` `LightGBM` `SHAP` `scikit-learn` `MLflow` `NetworkX`
 
-<img src="https://skillicons.dev/icons?i=python,js,ts,java,bash&theme=dark" alt="languages" />
+<samp>Backend</samp> `FastAPI` `Flask` `Node.js` `Express` `REST` `WebSocket`
 
-**[ Frontend ]**
+<samp>Frontend</samp> `Next.js` `React` `Tailwind` `ReactFlow` `Mermaid` `Monaco`
 
-<img src="https://skillicons.dev/icons?i=react,nextjs,html,css,tailwind&theme=dark" alt="frontend" />
+<samp>Data</samp> `PostgreSQL` `MongoDB` `SQLite` `Prisma`
 
-**[ Backend & Data ]**
-
-<img src="https://skillicons.dev/icons?i=nodejs,postgres,mongodb,mysql,redis&theme=dark" alt="backend" />
-
-**[ AI / ML ]**
-
-<img src="https://skillicons.dev/icons?i=tensorflow,pytorch&theme=dark" alt="ai" />
-
-**[ Cloud, DevOps & Infra ]**
-
-<img src="https://skillicons.dev/icons?i=docker,git,linux&theme=dark" alt="cloud" />
-
-</div>
-
-<br/>
-
-<div align="center">
-
-**[ AI Risk & Observability ]**
-
-<img src="https://img.shields.io/badge/XGBoost-CAFF3C?style=flat-square&labelColor=060D08" alt="xgboost" />
-<img src="https://img.shields.io/badge/LightGBM-CAFF3C?style=flat-square&labelColor=060D08" alt="lightgbm" />
-<img src="https://img.shields.io/badge/SHAP-CAFF3C?style=flat-square&labelColor=060D08" alt="shap" />
-<img src="https://img.shields.io/badge/MLflow-CAFF3C?style=flat-square&labelColor=060D08" alt="mlflow" />
-<img src="https://img.shields.io/badge/NetworkX-CAFF3C?style=flat-square&labelColor=060D08" alt="networkx" />
-<img src="https://img.shields.io/badge/FastAPI-CAFF3C?style=flat-square&labelColor=060D08" alt="fastapi" />
-
-</div>
+<samp>Platform</samp> `Docker` `GitHub Actions` `Turborepo` `pytest` `Vitest`
 
 ---
 
-## `> cat expertise.json`
-
-| Domain | Proficiency | Details |
-| :-- | :-- | :-- |
-| **Risk Intelligence** | `&#9608;&#9608;&#9608;&#9608;&#9608; Expert` | Mule-ring graph detection, SHAP, audit-led risk scoring |
-| **Calibrated ML** | `&#9608;&#9608;&#9608;&#9608;&#9608; Expert` | PD modeling, profit-aware policy, threshold calibration |
-| **Explainable AI** | `&#9608;&#9608;&#9608;&#9608;&#9607; Senior` | SHAP attribution, audit trails, measurable evaluation |
-| **Full-Stack Product** | `&#9608;&#9608;&#9608;&#9608;&#9607; Senior` | Next.js, FastAPI, Spring Boot, secure APIs |
-| **Data Protection** | `&#9608;&#9608;&#9608;&#9608;&#9607; Senior` | Validation, tenant isolation, encrypted secrets |
-
----
-
-## `> ls /projects --sort=impact`
+<img src="./hd/projects.svg" width="900" alt="projects" />
 
 <details open>
-<summary><b>&#9654; TRACER — Real-Time Mule-Ring Defense</b></summary>
+<summary><b>&#9654; TRACER &mdash; Real-Time Mule-Ring Defense</b></summary>
 
 <br/>
 
-Defense-only risk engine that scores transactions with XGBoost + SHAP and detects mule-rings via graph topology.
+Defense-only risk engine scoring Razorpay transactions in under 50&nbsp;ms.
+Graph topology catches what a row-wise model misses: devices fanning out across
+payment identities, and same-amount repeat smurfing. A bounded agent can only
+approve, challenge, or hold &mdash; and every action lands in a hash-chained
+audit ledger.
 
-| Aspect | Detail |
-| :-- | :-- |
-| **Stack** | Python · FastAPI · Next.js · XGBoost · SHAP · NetworkX |
-| **Scale** | Real-time scoring + graph analysis |
-| **Repo** | [`WHITEJACK5/TRACER-Real-Time-Mule-Ring-Defense`](https://github.com/WHITEJACK5/TRACER-Real-Time-Mule-Ring-Defense) |
+<samp>Stack</samp> Python &middot; FastAPI &middot; Next.js &middot; XGBoost &middot; SHAP &middot; NetworkX
+<br/>
+<a href="https://github.com/WHITEJACK5/TRACER-Real-Time-Mule-Ring-Defense">Repository</a>
 
 </details>
 
@@ -120,12 +67,14 @@ Defense-only risk engine that scores transactions with XGBoost + SHAP and detect
 
 <br/>
 
-Calibrated probability-of-default modeling with profit-aware decision policy and SHAP explanations.
+Probability-of-default modeling on LendingClub, with the leakage audit written
+down: 151 raw columns reduced to 24 origination-time columns, and a temporal
+split instead of a random one. Calibration and a profit-aware policy turn the
+score into an approve/reject decision, and SHAP explains it.
 
-| Aspect | Detail |
-| :-- | :-- |
-| **Stack** | Python · LightGBM · MLflow · SHAP · FastAPI |
-| **Repo** | [`WHITEJACK5/loan-default-risk`](https://github.com/WHITEJACK5/loan-default-risk) — [Demo](https://whitejack5-loan-default-risk.hf.space) |
+<samp>Stack</samp> Python &middot; LightGBM &middot; MLflow &middot; SHAP &middot; FastAPI &middot; Docker
+<br/>
+<a href="https://github.com/WHITEJACK5/loan-default-risk">Repository</a> &middot; <a href="https://whitejack5-loan-default-risk.hf.space">Demo</a>
 
 </details>
 
@@ -134,12 +83,14 @@ Calibrated probability-of-default modeling with profit-aware decision policy and
 
 <br/>
 
-Staged monorepo job portal with scraping and secure workflows.
+Full-stack job portal that scrapes company career pages and lets applicants
+apply in one click with saved documents. Deliberately staged &mdash; monolith,
+then feature-based decomposition, then a Turborepo monorepo with OpenAPI
+contracts &mdash; with the honest stopping point documented rather than faked.
 
-| Aspect | Detail |
-| :-- | :-- |
-| **Stack** | Node.js · Express · MongoDB · Turborepo |
-| **Repo** | [`WHITEJACK5/white-collars`](https://github.com/WHITEJACK5/white-collars) |
+<samp>Stack</samp> Node.js &middot; Express &middot; MongoDB &middot; EJS &middot; Turborepo &middot; Docker
+<br/>
+<a href="https://github.com/WHITEJACK5/white-collars">Repository</a>
 
 </details>
 
@@ -148,84 +99,105 @@ Staged monorepo job portal with scraping and secure workflows.
 
 <br/>
 
-Flask + SQLite QR generator with analytics for dynamic QR management.
+Local-first QR generator: 25+ payload types, static and dynamic codes, live
+preview, password and expiry protection, and scan analytics on a local SQLite
+database that initialises itself on first run.
 
-| Aspect | Detail |
-| :-- | :-- |
-| **Stack** | Python · Flask · SQLite |
-| **Repo** | [`WHITEJACK5/DYNAMIC-QR`](https://github.com/WHITEJACK5/DYNAMIC-QR) |
+<samp>Stack</samp> Python &middot; Flask &middot; SQLite &middot; JWT
+<br/>
+<a href="https://github.com/WHITEJACK5/DYNAMIC-QR">Repository</a>
 
 </details>
 
 ---
 
-## `> echo $ACHIEVEMENTS`
+<img src="./hd/expertise.svg" width="900" alt="expertise" />
 
-<div align="center">
-
-| Win | Detail |
+| Domain | What I actually do |
 | :-- | :-- |
-| &#9646; **Risk Systems** | Built TRACER — graph + SHAP risk engine with audit ledger |
-| &#9646; **Calibrated ML** | Built profit-aware PD models with explainability |
-| &#9646; **Product Shipping** | 4+ full-stack products shipped — solo |
-| &#9646; **Building in Public** | 7 public repos, consistent building |
-
-</div>
+| **Risk intelligence** | Mule-ring graph detection, calibrated risk scoring, threshold policy |
+| **Explainable ML** | SHAP attribution, model cards, limitations stated next to the claims |
+| **ML systems** | Leakage-aware validation, temporal splits, drift monitoring, reproducible pipelines |
+| **Backend** | Typed REST APIs, idempotency, rate limiting, audit trails |
+| **Product** | Next.js interfaces, dashboards, Docker delivery, CI that gates merges |
 
 ---
 
-## `> git stats --global`
+<img src="./hd/approach.svg" width="900" alt="approach" />
 
-<div align="center">
+- **Reproducible evaluation before optimization.** A number you cannot re-derive
+  is not a result.
+- **Explainability is part of the model, not a wrapper.** If nobody can say why
+  a transaction was held, the score is not usable.
+- **Document the limits.** A prototype that admits its own failure modes is
+  more useful than one that overstates its accuracy.
+- **Small, testable slices.** A change that can be reviewed is a change that
+  can be trusted.
 
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=WHITEJACK5&hide_border=true&background=0A0F08&stroke=CAFF3C&ring=CAFF3C&fire=CAFF3C&currStreakLabel=CAFF3C&sideLabels=CAFF3C&dates=CAFF3C&currStreakNum=CAFF3C&sideNums=CAFF3C" alt="streak" />
+---
+
+<img src="./hd/stats.svg" width="520" alt="Contribution totals" />
 
 <br/>
 
-<sub>Stats temporarily hidden -- vercel is rate-limited for new accounts. Streak is live.</sub>
-
-</div>
-
----
-
-## `> contribution-report --detailed`
-
-<div align="center">
-
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=WHITEJACK5&theme=2077" width="100%" alt="profile-details" />
+<img src="./streak.svg" width="520" alt="Contribution streak" />
 
 <br/>
 
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=WHITEJACK5&theme=2077" alt="repos-per-language" />&nbsp;
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=WHITEJACK5&theme=2077" alt="most-commit-language" />
+<img src="./langs.svg" width="520" alt="Top languages" />
 
 <br/>
 
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=WHITEJACK5&theme=2077" alt="stats-card" />&nbsp;
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=WHITEJACK5&theme=2077&utcOffset=5.5" alt="productive-time" />
+<img src="./year.svg" width="520" alt="Contribution calendar, one character per day" />
 
-</div>
+<br/>
 
----
-
-## `> ping me`
-
-<div align="center">
-
-<a href="https://www.linkedin.com/in/devireddybharadwaja"><img src="https://img.shields.io/badge/LinkedIn-CAFF3C?style=for-the-badge&logo=linkedin&logoColor=000000&labelColor=060D08" alt="linkedin" /></a>
-<a href="https://github.com/WHITEJACK5"><img src="https://img.shields.io/badge/GitHub-CAFF3C?style=for-the-badge&logo=github&logoColor=000000&labelColor=060D08" alt="github" /></a>
-<a href="https://instagram.com/futurebug5"><img src="https://img.shields.io/badge/%40futurebug5-CAFF3C?style=for-the-badge&logo=instagram&logoColor=000000&labelColor=060D08" alt="instagram" /></a>
-
-</div>
+<sub>Refreshed nightly by <code>.github/workflows/refresh-stats.yml</code> from the GitHub
+GraphQL API, pinned to whole UTC days so the output is byte-stable. Columns, not
+lines: a day with no contributions is empty space, not a point on a curve
+between neighbours.</sub>
 
 ---
 
+<img src="./hd/connect.svg" width="900" alt="connect" />
+
 <div align="center">
 
-<sub><i>// building explainable AI systems & full-stack products</i></sub>
+<a href="https://github.com/WHITEJACK5"><img src="https://img.shields.io/badge/GitHub-39FF14?style=for-the-badge&logo=github&logoColor=0A0A0A" alt="GitHub" /></a>
+<a href="https://www.linkedin.com/in/devireddybharadwaja"><img src="https://img.shields.io/badge/LinkedIn-0A0A0A?style=for-the-badge&logo=linkedin&logoColor=39FF14" alt="LinkedIn" /></a>
 
 <br/><br/>
 
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&height=120&section=footer&color=CAFF3C&text=WHITEJACK5%20--%20DEVIREDDY%20BHARADWAJA%20REDDY&fontSize=18&fontColor=060D08" alt="footer" />
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&height=100&section=footer&color=0a0f08&fontColor=39FF14&text=WHITEJACK5%20--%20DEVIREDDY%20BHARADWAJA%20REDDY" alt="footer" />
 
 </div>
+
+---
+
+## How this page is built
+
+Everything graphical here is generated by scripts in this repository.
+
+```bash
+python scripts/portrait.py        # portrait.svg   - ASCII + SMIL typing
+python scripts/generate_stats.py  # *.svg         - GraphQL, stdlib only
+python scripts/headings.py        # hd/*.svg      - section headings
+python scripts/build_fonts.py     # fonts/*.woff2 - subsets, ~10 KB total
+```
+
+| Piece | How |
+| :-- | :-- |
+| Portrait | `rembg` cut-out &rarr; bilateral &rarr; CLAHE &rarr; darkening curve &rarr; ramp |
+| Type animation | SMIL `clipPath` wipe, rows staggered, `fill="freeze"` so it prints once |
+| Stats | GitHub GraphQL, window pinned to whole UTC days, repos filtered to `PUBLIC` |
+| Fonts | JetBrains Mono (SIL OFL) subset per role, inlined as woff2 data URIs |
+
+GitHub strips `<style>`, `class`, and inline `<svg>` from README markdown, so
+the font is embedded in each SVG and the only text styling available in the
+body is `code` / `samp`. Image headings have no anchor links, so the on-page
+README outline is empty &mdash; the `alt` text carries the word for screen
+readers.
+
+Portrait pipeline adapted from the
+[ASCII Portrait README Guide](https://burly-handstand-0dc.notion.site/ASCII-Portrait-README-Guide-3a3e3f86338481f0b545ec8120bbf604).
+Typeface: JetBrains Mono, SIL OFL 1.1.
