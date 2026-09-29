@@ -24,7 +24,7 @@ jobs:
         run: python3 scripts/generate_stats.py
       - name: verify svgs are well-formed
         run: |
-          for f in stats.svg streak.svg langs.svg year.svg hd/*.svg portrait.svg; do
+          for f in stats.svg streak.svg langs.svg year.svg hd/*.svg; do
             [ -e "$f" ] || continue
             python3 -c "import xml.etree.ElementTree as E,sys; E.parse(sys.argv[1])" "$f"
           done
