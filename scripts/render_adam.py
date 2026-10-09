@@ -29,13 +29,13 @@ SRC = ROOT / "src.jpg"
 
 # ---------------------------------------------------------------- recipe
 P = {
-    "cellSize": 9,
+    "cellSize": 5,
     "density": 20,
     "coverage": 100,
     "invert": False,
     "renderMode": "dither",
-    "contrast": 158,
-    "saturation": 100,
+    "contrast": 165,
+    "saturation": 145,
     "brightness": 0,
     "grayscale": 0,
     "tint": "#3ca6ff",
@@ -112,7 +112,7 @@ def adjust(arr):
     # midtone lift is applied afterwards so the fresco's flat plaster survives
     # the dither instead of clipping to white.
     a = np.clip(a, 0.0, 1.0)
-    a = np.power(a, 0.88)
+    a = np.power(a, 0.92)
 
     return np.clip(a, 0.0, 1.0)
 
@@ -182,7 +182,7 @@ def render_frame(pooled, lum, cy, cx, phase):
     ai = P["animIntensity"]["intensity"] / 100.0
     speed = P["animSpeed"]["intensity"] / 100.0
     wave = 0.5 + 0.5 * np.sin(2 * np.pi * (r * 1.0 - phase * speed * 1.0))
-    shift = (wave - 0.5) * 0.03 * ai
+    shift = (wave - 0.5) * 0.04 * ai
 
     if P["invert"]:
         norm = 1.0 - norm
@@ -195,7 +195,7 @@ def render_frame(pooled, lum, cy, cx, phase):
         on &= rng.random(on.shape) < cov
 
     # one cell template: filled block inset from the cell so the grid breathes
-    inset = max(1, int(round(cell * 0.14)))
+    inset = 0
     tpl = np.zeros((cell, cell), dtype=np.float32)
     tpl[inset:cell - inset, inset:cell - inset] = 1.0
 
@@ -230,7 +230,7 @@ def main():
     frames[0].save(
         ROOT / "preview.gif",
         save_all=True, append_images=frames[1:],
-        duration=10, loop=0, optimize=True, disposal=2,
+        duration=30, loop=0, optimize=True, disposal=2,
     )
     size = (ROOT / "preview.gif").stat().st_size
     print(f"preview.gif {len(frames)} frames, {size/1024:.0f} KB")
