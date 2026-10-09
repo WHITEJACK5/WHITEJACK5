@@ -61,7 +61,7 @@ MASK_ENABLED = False
 FPS = 16                # was 12: the pulse was dragging
 TARGET_W = 780
 FRAMES = 16
-RENDER_SHARPNESS = 0.10   # 1.0 = pure hard dither, 0.0 = pure tone
+RENDER_SHARPNESS = 0.04   # 1.0 = pure hard dither, 0.0 = pure tone
 
 # 8x8 Bayer matrix, normalised to 0..1. Ordered dithering keeps the tonal
 # ramp smooth without the noise that error diffusion produces at this size.
@@ -183,8 +183,8 @@ def render_frame(pooled, lum, cy, cx, phase):
     r /= (r.max() + 1e-6)
     ai = P["animIntensity"]["intensity"] / 100.0
     speed = P["animSpeed"]["intensity"] / 100.0
-    wave = 0.5 + 0.5 * np.sin(2 * np.pi * (r * 2.0 - phase * speed * 2.0))
-    shift = (wave - 0.5) * 0.30 * ai
+    wave = 0.5 + 0.5 * np.sin(2 * np.pi * (r * 1.0 - phase * speed * 1.0))
+    shift = (wave - 0.5) * 0.12 * ai
 
     if P["invert"]:
         norm = 1.0 - norm
