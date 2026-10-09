@@ -50,67 +50,12 @@ model limits, and documentation that matches what the code actually does.
 
 ## \U0001F4BB Tech Stack
 
-**Languages** &mdash; taken from the GitHub language breakdown across the public
-repositories, not from a wishlist.
-
 <p>
-<img src="https://img.shields.io/badge/Python-42.6%25-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python 42.6%" />
-<img src="https://img.shields.io/badge/Jupyter%20Notebook-29.7%25-DA5B0B?style=flat-square&logo=jupyter&logoColor=white" alt="Jupyter Notebook 29.7%" />
-<img src="https://img.shields.io/badge/JavaScript-11.1%25-F7DF1E?style=flat-square&logo=javascript&logoColor=black" alt="JavaScript 11.1%" />
-<img src="https://img.shields.io/badge/TypeScript-9.2%25-3178C6?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript 9.2%" />
-<img src="https://img.shields.io/badge/HTML-2.8%25-E34F26?style=flat-square&logo=html5&logoColor=white" alt="HTML 2.8%" />
-<img src="https://img.shields.io/badge/EJS-2.4%25-B4CA65?style=flat-square&logo=ejs&logoColor=black" alt="EJS 2.4%" />
-<img src="https://img.shields.io/badge/CSS-1.8%25-1572B6?style=flat-square&logo=css3&logoColor=white" alt="CSS 1.8%" />
-<img src="https://img.shields.io/badge/Dockerfile-2496ED?style=flat-square&logo=docker&logoColor=white" alt="Dockerfile" />
-</p>
-
-**AI / ML** &mdash; used in the fraud and credit-risk work
-
-<p>
-<img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python" />
-<img src="https://img.shields.io/badge/XGBoost-FF9900?style=flat-square&logoColor=black" alt="XGBoost" />
-<img src="https://img.shields.io/badge/LightGBM-8CAA55?style=flat-square&logoColor=white" alt="LightGBM" />
-<img src="https://img.shields.io/badge/scikit--learn-F7931E?style=flat-square&logo=scikit-learn&logoColor=white" alt="scikit-learn" />
-<img src="https://img.shields.io/badge/SHAP-00C2FF?style=flat-square&logoColor=black" alt="SHAP" />
-<img src="https://img.shields.io/badge/MLflow-0194E2?style=flat-square&logo=mlflow&logoColor=white" alt="MLflow" />
-<img src="https://img.shields.io/badge/NetworkX-0055A4?style=flat-square&logoColor=white" alt="NetworkX" />
-</p>
-
-**Backend**
-
-<p>
-<img src="https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white" alt="FastAPI" />
-<img src="https://img.shields.io/badge/Flask-000000?style=flat-square&logo=flask&logoColor=white" alt="Flask" />
-<img src="https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white" alt="Node.js" />
-<img src="https://img.shields.io/badge/Express-404D59?style=flat-square&logo=express&logoColor=white" alt="Express" />
-<img src="https://img.shields.io/badge/REST-6BA539?style=flat-square&logoColor=white" alt="REST" />
-</p>
-
-**Frontend**
-
-<p>
-<img src="https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white" alt="Next.js" />
-<img src="https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB" alt="React" />
-<img src="https://img.shields.io/badge/Tailwind%20CSS-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white" alt="Tailwind CSS" />
-<img src="https://img.shields.io/badge/ReactFlow-FF7A00?style=flat-square&logoColor=white" alt="ReactFlow" />
-<img src="https://img.shields.io/badge/Mermaid-8A7DB1?style=flat-square&logoColor=white" alt="Mermaid" />
-<img src="https://img.shields.io/badge/Monaco%20Editor-4FC3F7?style=flat-square&logoColor=black" alt="Monaco Editor" />
-</p>
-
-**Data &amp; Platform**
-
-<p>
-<img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white" alt="PostgreSQL" />
-<img src="https://img.shields.io/badge/MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white" alt="MongoDB" />
-<img src="https://img.shields.io/badge/SQLite-003B57?style=flat-square&logo=sqlite&logoColor=white" alt="SQLite" />
-<img src="https://img.shields.io/badge/Prisma-2D3748?style=flat-square&logo=prisma&logoColor=white" alt="Prisma" />
-<img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white" alt="Docker" />
-<img src="https://img.shields.io/badge/GitHub%20Actions-2088FF?style=flat-square&logo=githubactions&logoColor=white" alt="GitHub Actions" />
-<img src="https://img.shields.io/badge/Turborepo-EF4A8B?style=flat-square&logo=turborepo&logoColor=white" alt="Turborepo" />
-<img src="https://img.shields.io/badge/pytest-0A9EDC?style=flat-square&logo=pytest&logoColor=white" alt="pytest" />
+![C](https://img.shields.io/badge/c-%2300599C.svg?style=for-the-badge&logo=c&logoColor=white) ![C++](https://img.shields.io/badge/c++-%2300599C.svg?style=for-the-badge&logo=c%2B%2B&logoColor=white) ![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white) ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white) ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E) ![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white) ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54) ![PowerShell](https://img.shields.io/badge/PowerShell-%235391FE.svg?style=for-the-badge&logo=powershell&logoColor=white) ![PHP](https://img.shields.io/badge/php-%23777BB4.svg?style=for-the-badge&logo=php&logoColor=white) ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white) ![Firebase](https://img.shields.io/badge/firebase-%23039BE5.svg?style=for-the-badge&logo=firebase&logoColor=white) ![OpenStack](https://img.shields.io/badge/Openstack-%23f01742.svg?style=for-the-badge&logo=openstack&logoColor=white) ![.Net](https://img.shields.io/badge/.NET-5C2D91?style=for-the-badge&logo=.net&logoColor=white) ![Anaconda](https://img.shields.io/badge/Anaconda-%2344A833?style=for-the-badge&logo=anaconda&logoColor=white) ![Bootstrap](https://img.shields.io/badge/bootstrap-%238511FA.svg?style=for-the-badge&logo=bootstrap&logoColor=white) ![nVIDIA](https://img.shields.io/badge/cuda-000000.svg?style=for-the-badge&logo=nVIDIA&logoColor=green) ![Chart.js](https://img.shields.io/badge/chart.js-F5788D.svg?style=for-the-badge&logo=chart.js&logoColor=white) ![EJS](https://img.shields.io/badge/ejs-%23B4CA65.svg?style=for-the-badge&logo=ejs&logoColor=black) ![Express.js](https://img.shields.io/badge/express.js-%23404d59.svg?style=for-the-badge&logo=express&logoColor=%2361DAFB) ![FastAPI](https://img.shields.io/badge/FastAPI-005571?style=for-the-badge&logo=fastapi) ![Flutter](https://img.shields.io/badge/Flutter-%2302569B.svg?style=for-the-badge&logo=Flutter&logoColor=white) ![Flask](https://img.shields.io/badge/flask-%23000.svg?style=for-the-badge&logo=flask&logoColor=white) ![Vite](https://img.shields.io/badge/vite-%23646CFF.svg?style=for-the-badge&logo=vite&logoColor=white) ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB) ![NPM](https://img.shields.io/badge/NPM-%23CB3837.svg?style=for-the-badge&logo=npm&logoColor=white) ![jQuery](https://img.shields.io/badge/jquery-%230769AD.svg?style=for-the-badge&logo=jquery&logoColor=white) ![Next JS](https://img.shields.io/badge/Next-black?style=for-the-badge&logo=next.js&logoColor=white) ![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white) ![Web3.js](https://img.shields.io/badge/web3.js-F16822?style=for-the-badge&logo=web3.js&logoColor=white) ![Spring](https://img.shields.io/badge/spring-%236DB33F.svg?style=for-the-badge&logo=spring&logoColor=white) ![NodeJS](https://img.shields.io/badge/node.js-6DA55F.svg?style=for-the-badge&logo=node.js&logoColor=white) ![Apache Tomcat](https://img.shields.io/badge/apache%20tomcat-%23F8DC75.svg?style=for-the-badge&logo=apache-tomcat&logoColor=black) ![Apache Maven](https://img.shields.io/badge/Apache%20Maven-C71A36?style=for-the-badge&logo=Apache%20Maven&logoColor=white) ![SQLite](https://img.shields.io/badge/sqlite-%2307405e.svg?style=for-the-badge&logo=sqlite&logoColor=white) ![Supabase](https://img.shields.io/badge/Supabase-3ECF8E?style=for-the-badge&logo=supabase&logoColor=white) ![Firebase](https://img.shields.io/badge/firebase-a08021?style=for-the-badge&logo=firebase&logoColor=ffcd34) ![Neo4J](https://img.shields.io/badge/Neo4j-008CC1?style=for-the-badge&logo=neo4j&logoColor=white) ![Postgres](https://img.shields.io/badge/postgres-%23316192.svg?style=for-the-badge&logo=postgresql&logoColor=white) ![Prisma](https://img.shields.io/badge/Prisma-3982CE?style=for-the-badge&logo=Prisma&logoColor=white) ![Keras](https://img.shields.io/badge/Keras-%23D00000.svg?style=for-the-badge&logo=Keras&logoColor=white) ![Matplotlib](https://img.shields.io/badge/Matplotlib-%23ffffff.svg?style=for-the-badge&logo=Matplotlib&logoColor=black) ![mlflow](https://img.shields.io/badge/mlflow-%23d9ead3.svg?style=for-the-badge&logo=numpy&logoColor=blue) ![NumPy](https://img.shields.io/badge/numpy-%23013243.svg?style=for-the-badge&logo=numpy&logoColor=white) ![Pandas](https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white) ![PyTorch](https://img.shields.io/badge/PyTorch-%23EE4C2C.svg?style=for-the-badge&logo=PyTorch&logoColor=white) ![scikit-learn](https://img.shields.io/badge/scikit--learn-%23F7931E.svg?style=for-the-badge&logo=scikit-learn&logoColor=white) ![TensorFlow](https://img.shields.io/badge/TensorFlow-%23FF6F00.svg?style=for-the-badge&logo=TensorFlow&logoColor=white)
 </p>
 
 ---
+
 
 <img src="./hd/projects.svg" width="900" alt="projects" />
 
@@ -207,33 +152,24 @@ database that initialises itself on first run.
 
 ## \U0001F4CA GitHub Stats
 
-Every graphic below is generated inside this repository by a scheduled action,
-from the GitHub GraphQL API. No third-party widget service is involved, so
-nothing here can rate-limit or go dark.
+![](https://github-readme-stats.shion.dev/api?username=WHITEJACK5&theme=dark&hide_border=true&include_all_commits=true&count_private=true)
 
-<img src="./stats.svg" width="520" alt="Contribution totals and weekly trend" />
+![](https://streak-stats.demolab.com/?user=WHITEJACK5&theme=dark&hide_border=true)
 
-<br/>
-
-<img src="./streak.svg" width="520" alt="Contribution streak" />
-
-<br/>
-
-<img src="./langs.svg" width="520" alt="Top languages by bytes and by repository" />
-
-<br/>
-
-<img src="./year.svg" width="520" alt="Contribution calendar, one character per day" />
-
-<br/>
-
-<sub>Refreshed nightly by <code>.github/workflows/refresh-stats.yml</code>, pinned to whole
-UTC days so the output is byte-stable between runs, and filtered to public
-repositories so the numbers match what a visitor sees. Columns, not lines: a day
-with no contributions is empty space, not a point on a curve between
-neighbours.</sub>
+![](https://github-readme-stats.shion.dev/api/top-langs/?username=WHITEJACK5&theme=dark&hide_border=true&include_all_commits=true&count_private=true&layout=compact)
 
 ---
+
+### \u270D\uFE0F Random Dev Quote
+
+![](https://quotes-github-readme.vercel.app/api?type=horizontal&theme=dark)
+
+---
+
+<img src="https://komarev.com/ghpvc/?username=WHITEJACK5&icon=5&color=4" alt="profile views" />
+
+---
+
 
 <img src="./hd/connect.svg" width="900" alt="connect" />
 
