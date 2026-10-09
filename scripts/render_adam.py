@@ -58,7 +58,7 @@ LIGHTS_ENABLED = False
 MASK_ENABLED = False
 
 TARGET_W = 780
-FRAMES = 24
+FRAMES = 96
 
 # 8x8 Bayer matrix, normalised to 0..1. Ordered dithering keeps the tonal
 # ramp smooth without the noise that error diffusion produces at this size.
@@ -182,7 +182,7 @@ def render_frame(pooled, lum, cy, cx, phase):
     ai = P["animIntensity"]["intensity"] / 100.0
     speed = P["animSpeed"]["intensity"] / 100.0
     wave = 0.5 + 0.5 * np.sin(2 * np.pi * (r * 1.0 - phase * speed * 1.0))
-    shift = (wave - 0.5) * 0.12 * ai
+    shift = (wave - 0.5) * 0.03 * ai
 
     if P["invert"]:
         norm = 1.0 - norm
@@ -230,7 +230,7 @@ def main():
     frames[0].save(
         ROOT / "preview.gif",
         save_all=True, append_images=frames[1:],
-        duration=int(1000 / 12), loop=0, optimize=True, disposal=2,
+        duration=10, loop=0, optimize=True, disposal=2,
     )
     size = (ROOT / "preview.gif").stat().st_size
     print(f"preview.gif {len(frames)} frames, {size/1024:.0f} KB")
