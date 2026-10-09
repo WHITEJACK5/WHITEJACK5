@@ -29,7 +29,7 @@ SRC = ROOT / "src.jpg"
 
 # ---------------------------------------------------------------- recipe
 P = {
-    "cellSize": 8,
+    "cellSize": 5,
     "density": 20,
     "coverage": 100,
     "invert": False,
@@ -61,7 +61,7 @@ MASK_ENABLED = False
 FPS = 16                # was 12: the pulse was dragging
 TARGET_W = 780
 FRAMES = 16
-RENDER_SHARPNESS = 0.04   # 1.0 = pure hard dither, 0.0 = pure tone
+RENDER_SHARPNESS = 0.55   # 1.0 = pure hard dither, 0.0 = pure tone
 
 # 8x8 Bayer matrix, normalised to 0..1. Ordered dithering keeps the tonal
 # ramp smooth without the noise that error diffusion produces at this size.
@@ -205,7 +205,7 @@ def render_frame(pooled, lum, cy, cx, phase):
     big = cell * scale
     tt = Image.new("L", (big, big), 0)
     ImageDraw.Draw(tt).ellipse(
-        [big * 0.005, big * 0.005, big * 0.995, big * 0.995], fill=255
+        [big * 0.06, big * 0.06, big * 0.94, big * 0.94], fill=255
     )
     tpl = np.asarray(tt.resize((cell, cell), Image.LANCZOS),
                      dtype=np.float32) / 255.0
