@@ -22,14 +22,14 @@ parameter set alone.
 import pathlib
 
 import numpy as np
-from PIL import Image
+from PIL import Image, ImageDraw
 
 ROOT = pathlib.Path(__file__).resolve().parent
 SRC = ROOT / "src.jpg"
 
 # ---------------------------------------------------------------- recipe
 P = {
-    "cellSize": 4,
+    "cellSize": 5,
     "density": 20,
     "coverage": 100,
     "invert": False,
@@ -46,6 +46,7 @@ P = {
     "animated": True,
     "animStyle": "pulse",
     "animSpeed": {"enabled": True, "intensity": 100},
+    "_fps": 18,
     "animIntensity": {"enabled": True, "intensity": 60},
 }
 
@@ -57,8 +58,10 @@ PFX = {"bloom": False, "glitch": False, "filmDust": False, "halftone": False,
 LIGHTS_ENABLED = False
 MASK_ENABLED = False
 
-TARGET_W = 860
-FRAMES = 24
+FPS = 16                # was 12: the pulse was dragging
+TARGET_W = 780
+FRAMES = 16
+RENDER_SHARPNESS = 0.55   # 1.0 = pure hard dither, 0.0 = pure tone
 
 # 8x8 Bayer matrix, normalised to 0..1. Ordered dithering keeps the tonal
 # ramp smooth without the noise that error diffusion produces at this size.
@@ -186,20 +189,34 @@ def render_frame(pooled, lum, cy, cx, phase):
     if P["invert"]:
         norm = 1.0 - norm
 
-    on = dither_fs(np.clip(norm + shift, 0.0, 1.0))
+    norm_d = np.clip(norm + shift, 0.0, 1.0)
+    on = dither_fs(norm_d)
 
     cov = P["coverage"] / 100.0
     if cov < 1.0:
         rng = np.random.default_rng(7)
         on &= rng.random(on.shape) < cov
 
-    # one cell template: filled block inset from the cell so the grid breathes
-    inset = max(1, int(round(cell * 0.14)))
-    tpl = np.zeros((cell, cell), dtype=np.float32)
-    tpl[inset:cell - inset, inset:cell - inset] = 1.0
+# one cell template. Two changes cut the clutter:
+    #  - a rounded mark instead of a hard square, so cells read as deliberate
+    #    dots rather than a grid of hard blocks
+    #  - supersampled and downsampled, which antialiases the edge
+    scale = 4
+    big = cell * scale
+    tt = Image.new("L", (big, big), 0)
+    ImageDraw.Draw(tt).ellipse(
+        [big * 0.06, big * 0.06, big * 0.94, big * 0.94], fill=255
+    )
+    tpl = np.asarray(tt.resize((cell, cell), Image.LANCZOS),
+                     dtype=np.float32) / 255.0
 
-    mask = (on.astype(np.float32)[:, :, None, None]
-            * tpl[None, None, :, :])
+    # alpha per cell: hard on/off dithering produced scattered single-pixel
+    # noise. Mixing the binary mask with the continuous tone keeps the
+    # dither's structure while removing most of the scatter.
+    t = RENDER_SHARPNESS
+    alpha = np.clip(on.astype(np.float32) * t + norm_d * (1 - t), 0.0, 1.0)
+
+    mask = (alpha[:, :, None, None] * tpl[None, None, :, :])
     mask = mask.reshape(H * cell, W * cell)
 
     colour = np.repeat(np.repeat(pooled, cell, axis=0), cell, axis=1)
@@ -225,10 +242,20 @@ def main():
         if i == 0:
             frames[0].save(ROOT / "frame0.png")
 
+    # GIF is limited to a 256-colour palette. The antialiased marks pushed the
+    # file to ~4 MB because every frame carried its own adaptive palette. Build
+    # one palette from a contact sheet of all frames and apply it everywhere:
+    # the palette is what costs the bytes, not the frame count.
+    sheet = Image.new("RGB", (frames[0].width, frames[0].height * len(frames)))
+    for i, f in enumerate(frames):
+        sheet.paste(f, (0, i * f.height))
+    pal_src = sheet.quantize(colors=96, method=Image.MEDIANCUT)
+    frames = [f.quantize(palette=pal_src, dither=Image.NONE) for f in frames]
+
     frames[0].save(
         ROOT / "preview.gif",
         save_all=True, append_images=frames[1:],
-        duration=int(1000 / 12), loop=0, optimize=True, disposal=2,
+        duration=int(1000 / FPS), loop=0, optimize=True, disposal=2,
     )
     size = (ROOT / "preview.gif").stat().st_size
     print(f"preview.gif {len(frames)} frames, {size/1024:.0f} KB")
