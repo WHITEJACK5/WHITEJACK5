@@ -17,7 +17,7 @@ if not HERO.exists():
 
 body = f"""<div align="center">
 
-<img src="./assets/creation-of-adam.gif" width="760"
+<img src="./assets/creation-of-adam.gif" width="860"
      alt="Dithered animation of Michelangelo's Creation of Adam, rendered from this repository" />
 
 <br/>

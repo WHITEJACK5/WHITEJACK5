@@ -29,12 +29,12 @@ SRC = ROOT / "src.jpg"
 
 # ---------------------------------------------------------------- recipe
 P = {
-    "cellSize": 5,
+    "cellSize": 4,
     "density": 20,
     "coverage": 100,
     "invert": False,
     "renderMode": "dither",
-    "contrast": 158,
+    "contrast": 180,
     "saturation": 100,
     "brightness": 0,
     "grayscale": 0,
@@ -57,7 +57,7 @@ PFX = {"bloom": False, "glitch": False, "filmDust": False, "halftone": False,
 LIGHTS_ENABLED = False
 MASK_ENABLED = False
 
-TARGET_W = 760
+TARGET_W = 860
 FRAMES = 24
 
 # 8x8 Bayer matrix, normalised to 0..1. Ordered dithering keeps the tonal
@@ -111,7 +111,7 @@ def adjust(arr):
     # midtone lift is applied afterwards so the fresco's flat plaster survives
     # the dither instead of clipping to white.
     a = np.clip(a, 0.0, 1.0)
-    a = np.power(a, 0.88)
+    a = np.power(a, 0.80)
 
     return np.clip(a, 0.0, 1.0)
 
