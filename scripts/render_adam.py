@@ -29,7 +29,7 @@ SRC = ROOT / "src.jpg"
 
 # ---------------------------------------------------------------- recipe
 P = {
-    "cellSize": 9,
+    "cellSize": 5,
     "density": 20,
     "coverage": 100,
     "invert": False,
@@ -57,7 +57,7 @@ PFX = {"bloom": False, "glitch": False, "filmDust": False, "halftone": False,
 LIGHTS_ENABLED = False
 MASK_ENABLED = False
 
-TARGET_W = 600
+TARGET_W = 760
 FRAMES = 24
 
 # 8x8 Bayer matrix, normalised to 0..1. Ordered dithering keeps the tonal
