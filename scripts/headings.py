@@ -43,7 +43,7 @@ def heading(text: str) -> str:
 
 HEADINGS = [
     "whoami",
-    "tech-stack",
+
     "expertise",
     "projects",
     "approach",
