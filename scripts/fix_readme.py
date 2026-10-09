@@ -1,25 +1,24 @@
-"""Rebuild README.md from assets/banner.txt plus corrected content.
+"""Rebuild README.md with the Creation of Adam dither animation as the header.
 
-Keeps the braille art byte-for-byte by reading it from disk instead of
-retyping it. Everything else is plain text.
+The braille banner that used to sit here has been replaced by
+assets/creation-of-adam.gif, rendered by the recipe below. Everything else is
+plain text written directly.
 """
 
 import pathlib
+import re
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
-BANNER = ROOT / "assets" / "banner.txt"
 README = ROOT / "README.md"
+HERO = ROOT / "assets" / "creation-of-adam.gif"
 
-art = BANNER.read_text(encoding="utf-8").rstrip("\n")
-bad = {c for c in art if c != "\n" and not (0x2800 <= ord(c) <= 0x28FF or c == " ")}
-if bad:
-    raise SystemExit(f"banner.txt is not pure braille: {bad}")
+if not HERO.exists():
+    raise SystemExit(f"missing {HERO} - render it before rebuilding the README")
 
 body = f"""<div align="center">
 
-<pre>
-{art}
-</pre>
+<img src="./assets/creation-of-adam.gif" width="600"
+     alt="Dithered animation of Michelangelo's Creation of Adam, rendered from this repository" />
 
 <br/>
 
@@ -257,6 +256,8 @@ README.write_text(body, encoding="utf-8")
 print(f"wrote {README} ({README.stat().st_size:,} bytes)")
 
 back = README.read_text(encoding="utf-8")
-block = back.split("<pre>\n", 1)[1].split("\n</pre>", 1)[0]
-print("art byte-identical to banner.txt:", block == art)
-print("art lines:", len(block.splitlines()))
+missing = [r for r in sorted(set(re.findall(r'src="\./([^"]+)"', back)))
+           if not (ROOT / r).exists()]
+print("hero referenced:", "./assets/creation-of-adam.gif" in back)
+print("braille block gone:", "<pre>" not in back)
+print("missing local image files:", missing or "none")
