@@ -1,4 +1,4 @@
-name: refresh stats
+﻿name: refresh stats
 on:
   schedule:
     - cron: "17 5 * * *"
@@ -28,3 +28,14 @@ jobs:
             [ -e "$f" ] || continue
             python3 -c "import xml.etree.ElementTree as E,sys; E.parse(sys.argv[1])" "$f"
           done
+      - name: commit and push if changed
+        run: |
+          git add stats.svg streak.svg langs.svg year.svg
+          if git diff --cached --quiet; then
+            echo "No changes to commit."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "chore: refresh profile stats"
+          git push

@@ -1,19 +1,24 @@
 <div align="center">
 
-<img src="./assets/creation-of-adam.gif" width="780"
+<img src="./assets/creation-of-adam.gif" width="600"
      alt="Dithered animation of Michelangelo's Creation of Adam, rendered from this repository" />
 
 <br/>
+
+**Devireddy Bharadwaja Reddy**
 
 <samp>GitHub</samp> `@WHITEJACK5` &nbsp;&middot;&nbsp;
 <samp>LinkedIn</samp> `/in/devireddybharadwaja` &nbsp;&middot;&nbsp;
 <samp>Focus</samp> `Applied AI / Full-Stack`
 
+<samp>B.Tech Computer Engineering (AI &amp; ML), Ramrao Adik Institute of Technology (RAIT), Navi Mumbai, 2024&ndash;2028, GPA 8.8/10</samp>
+
 <br/><br/>
 
 <a href="https://github.com/WHITEJACK5"><img src="https://img.shields.io/badge/GitHub-WHITEJACK5-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" /></a>
 <a href="https://www.linkedin.com/in/devireddybharadwaja"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
-<a href="mailto:poison.white12@gmail.com"><img src="https://img.shields.io/badge/Email-poison.white12@gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" /></a>
+<a href="https://leetcode.com/u/devireddy5"><img src="https://img.shields.io/badge/LeetCode-devireddy5-FFA116?style=for-the-badge&logo=leetcode&logoColor=black" alt="LeetCode" /></a>
+<a href="mailto:bharadwajareddydevireddy@gmail.com"><img src="https://img.shields.io/badge/Email-bharadwajareddydevireddy%40gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" /></a>
 <a href="https://www.instagram.com/futurebug5"><img src="https://img.shields.io/badge/Instagram-@futurebug5-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram" /></a>
 
 </div>
@@ -29,11 +34,26 @@ calibrated models, and the interfaces that make them usable.
 I care about the parts that are easy to skip: reproducible evaluation, honest
 model limits, and documentation that matches what the code actually does.
 
+Based in Navi Mumbai, India. Open to Applied ML / Full-Stack roles and internships.
+
 ---
 
-## 💻 Tech Stack
+## Tech Stack
 
-![C](https://img.shields.io/badge/c-%2300599C.svg?style=for-the-badge&logo=c&logoColor=white) ![C++](https://img.shields.io/badge/c++-%2300599C.svg?style=for-the-badge&logo=c%2B%2B&logoColor=white) ![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white) ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white) ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E) ![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white) ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54) ![PowerShell](https://img.shields.io/badge/PowerShell-%235391FE.svg?style=for-the-badge&logo=powershell&logoColor=white) ![PHP](https://img.shields.io/badge/php-%23777BB4.svg?style=for-the-badge&logo=php&logoColor=white) ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white) ![Firebase](https://img.shields.io/badge/firebase-%23039BE5.svg?style=for-the-badge&logo=firebase&logoColor=white) ![OpenStack](https://img.shields.io/badge/Openstack-%23f01742.svg?style=for-the-badge&logo=openstack&logoColor=white) ![.Net](https://img.shields.io/badge/.NET-5C2D91?style=for-the-badge&logo=.net&logoColor=white) ![Anaconda](https://img.shields.io/badge/Anaconda-%2344A833?style=for-the-badge&logo=anaconda&logoColor=white) ![Bootstrap](https://img.shields.io/badge/bootstrap-%238511FA.svg?style=for-the-badge&logo=bootstrap&logoColor=white) ![nVIDIA](https://img.shields.io/badge/cuda-000000.svg?style=for-the-badge&logo=nVIDIA&logoColor=green) ![Chart.js](https://img.shields.io/badge/chart.js-F5788D.svg?style=for-the-badge&logo=chart.js&logoColor=white) ![EJS](https://img.shields.io/badge/ejs-%23B4CA65.svg?style=for-the-badge&logo=ejs&logoColor=black) ![Express.js](https://img.shields.io/badge/express.js-%23404d59.svg?style=for-the-badge&logo=express&logoColor=%2361DAFB) ![FastAPI](https://img.shields.io/badge/FastAPI-005571?style=for-the-badge&logo=fastapi) ![Flutter](https://img.shields.io/badge/Flutter-%2302569B.svg?style=for-the-badge&logo=Flutter&logoColor=white) ![Flask](https://img.shields.io/badge/flask-%23000.svg?style=for-the-badge&logo=flask&logoColor=white) ![Vite](https://img.shields.io/badge/vite-%23646CFF.svg?style=for-the-badge&logo=vite&logoColor=white) ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB) ![NPM](https://img.shields.io/badge/NPM-%23CB3837.svg?style=for-the-badge&logo=npm&logoColor=white) ![jQuery](https://img.shields.io/badge/jquery-%230769AD.svg?style=for-the-badge&logo=jquery&logoColor=white) ![Next JS](https://img.shields.io/badge/Next-black?style=for-the-badge&logo=next.js&logoColor=white) ![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white) ![Web3.js](https://img.shields.io/badge/web3.js-F16822?style=for-the-badge&logo=web3.js&logoColor=white) ![Spring](https://img.shields.io/badge/spring-%236DB33F.svg?style=for-the-badge&logo=spring&logoColor=white) ![NodeJS](https://img.shields.io/badge/node.js-6DA55F.svg?style=for-the-badge&logo=node.js&logoColor=white) ![Apache Tomcat](https://img.shields.io/badge/apache%20tomcat-%23F8DC75.svg?style=for-the-badge&logo=apache-tomcat&logoColor=black) ![Apache Maven](https://img.shields.io/badge/Apache%20Maven-C71A36?style=for-the-badge&logo=Apache%20Maven&logoColor=white) ![SQLite](https://img.shields.io/badge/sqlite-%2307405e.svg?style=for-the-badge&logo=sqlite&logoColor=white) ![Supabase](https://img.shields.io/badge/Supabase-3ECF8E?style=for-the-badge&logo=supabase&logoColor=white) ![Firebase](https://img.shields.io/badge/firebase-a08021?style=for-the-badge&logo=firebase&logoColor=ffcd34) ![Neo4J](https://img.shields.io/badge/Neo4j-008CC1?style=for-the-badge&logo=neo4j&logoColor=white) ![Postgres](https://img.shields.io/badge/postgres-%23316192.svg?style=for-the-badge&logo=postgresql&logoColor=white) ![Prisma](https://img.shields.io/badge/Prisma-3982CE?style=for-the-badge&logo=Prisma&logoColor=white) ![Keras](https://img.shields.io/badge/Keras-%23D00000.svg?style=for-the-badge&logo=Keras&logoColor=white) ![Matplotlib](https://img.shields.io/badge/Matplotlib-%23ffffff.svg?style=for-the-badge&logo=Matplotlib&logoColor=black) ![mlflow](https://img.shields.io/badge/mlflow-%23d9ead3.svg?style=for-the-badge&logo=numpy&logoColor=blue) ![NumPy](https://img.shields.io/badge/numpy-%23013243.svg?style=for-the-badge&logo=numpy&logoColor=white) ![Pandas](https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white) ![PyTorch](https://img.shields.io/badge/PyTorch-%23EE4C2C.svg?style=for-the-badge&logo=PyTorch&logoColor=white) ![scikit-learn](https://img.shields.io/badge/scikit--learn-%23F7931E.svg?style=for-the-badge&logo=scikit-learn&logoColor=white) ![TensorFlow](https://img.shields.io/badge/TensorFlow-%23FF6F00.svg?style=for-the-badge&logo=TensorFlow&logoColor=white)
+**Languages**  
+![Python](https://img.shields.io/badge/Python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54) ![SQL](https://img.shields.io/badge/SQL-4479A1?style=for-the-badge&logo=postgresql&logoColor=white) ![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white) ![C](https://img.shields.io/badge/C-00599C?style=for-the-badge&logo=c&logoColor=white) ![C++](https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white)
+
+**ML**  
+![scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white) ![XGBoost](https://img.shields.io/badge/XGBoost-337AB7?style=for-the-badge&logo=xgboost&logoColor=white) ![LightGBM](https://img.shields.io/badge/LightGBM-02569B?style=for-the-badge&logo=lightgbm&logoColor=white) ![SHAP](https://img.shields.io/badge/SHAP-BE123C?style=for-the-badge&logoColor=white) ![MLflow](https://img.shields.io/badge/MLflow-0194E2?style=for-the-badge&logo=mlflow&logoColor=white) ![Evidently](https://img.shields.io/badge/Evidently-6C47FF?style=for-the-badge&logoColor=white)
+
+**Backend**  
+![FastAPI](https://img.shields.io/badge/FastAPI-005571?style=for-the-badge&logo=fastapi&logoColor=white) ![Flask](https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white) ![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white) ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white) ![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white)
+
+**Frontend**  
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB) ![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white) ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
+
+**DevOps**  
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white) ![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=for-the-badge&logo=github-actions&logoColor=white) ![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white) ![pytest](https://img.shields.io/badge/pytest-0A9EDC?style=for-the-badge&logo=pytest&logoColor=white) ![Playwright](https://img.shields.io/badge/Playwright-2EAD33?style=for-the-badge&logo=playwright&logoColor=white)
 
 ---
 
@@ -45,13 +65,15 @@ model limits, and documentation that matches what the code actually does.
 
 <br/>
 
-Defense-only risk engine scoring Razorpay transactions in under 50&nbsp;ms.
+Defense-only risk engine scoring Razorpay transactions, p50 53 ms at 18 req/s.
 Graph topology catches what a row-wise model misses: devices fanning out across
 payment identities, and same-amount repeat smurfing. A bounded agent can only
 approve, challenge, or hold &mdash; and every action lands in a hash-chained
 audit ledger.
 
 <samp>Stack</samp> Python &middot; FastAPI &middot; Next.js &middot; XGBoost &middot; SHAP &middot; NetworkX
+<br/>
+<samp>Result</samp> NetworkX, XGBoost, SHAP, FastAPI, Next.js, Docker. Fan-out &gt;= 4 and same-amount smurfing detection; p50 53 ms at 18 req/s; 83% of Bayes-ceiling AUPRC on a synthetic benchmark; 156 pytest, 6 Playwright E2E.
 <br/>
 <a href="https://github.com/WHITEJACK5/TRACER-Real-Time-Mule-Ring-Defense">Repository</a>
 
@@ -62,12 +84,14 @@ audit ledger.
 
 <br/>
 
-Probability-of-default modeling on LendingClub, with the leakage audit written
+Probability-of-default modeling on 1.35M LendingClub loans, with the leakage audit written
 down: 151 raw columns reduced to 24 origination-time columns, and a temporal
 split instead of a random one. Calibration and a profit-aware policy turn the
 score into an approve/reject decision, and SHAP explains it.
 
 <samp>Stack</samp> Python &middot; LightGBM &middot; MLflow &middot; SHAP &middot; FastAPI &middot; Docker
+<br/>
+<samp>Result</samp> LightGBM, FastAPI, Docker, MLflow, SHAP. Leakage-audited PD on 1.35M LendingClub loans; ROC-AUC 0.69, PR-AUC 0.35 on a 2017+ hold-out. API p50 29 ms, PSI drift checks, +$7.4M simulated profit policy, 85 tests.
 <br/>
 <a href="https://github.com/WHITEJACK5/loan-default-risk">Repository</a> &middot; <a href="https://whitejack5-loan-default-risk.hf.space">Demo</a>
 
@@ -104,6 +128,10 @@ database that initialises itself on first run.
 
 </details>
 
+### Latest repositories
+<!-- REPOS:START -->
+<!-- REPOS:END -->
+
 ---
 
 <img src="./hd/expertise.svg" width="900" alt="expertise" />
@@ -115,6 +143,20 @@ database that initialises itself on first run.
 | **ML systems** | Leakage-aware validation, temporal splits, drift monitoring, reproducible pipelines |
 | **Backend** | Typed REST APIs, idempotency, rate limiting, audit trails |
 | **Product** | Next.js interfaces, dashboards, Docker delivery, CI that gates merges |
+
+---
+
+## Education &amp; Achievements
+
+- **B.Tech Computer Engineering (AI &amp; ML)**, Ramrao Adik Institute of Technology (RAIT), Navi Mumbai, 2024&ndash;2028, GPA 8.8/10
+- **4th Place, Arohan 2.0 National-Level Hackathon (2025)**
+- **Coursework:** Machine Learning, Deep Learning, DSA, DBMS, OS, Computer Networks
+
+## Certifications
+
+- Machine Learning Specialization, Stanford Online &amp; DeepLearning.AI (Jul 2026)
+- Generative AI with Large Language Models, DeepLearning.AI &amp; AWS (Aug 2026)
+- Retrieval-Augmented Generation, DeepLearning.AI (Aug 2026)
 
 ---
 
@@ -131,23 +173,21 @@ database that initialises itself on first run.
 
 ---
 
-## 📊 GitHub Stats
+## GitHub Stats
 
-![](https://github-readme-stats.shion.dev/api?username=WHITEJACK5&theme=dark&hide_border=true&include_all_commits=true&count_private=true)
-
-![](https://streak-stats.demolab.com/?user=WHITEJACK5&theme=dark&hide_border=true)
-
-![](https://github-readme-stats.shion.dev/api/top-langs/?username=WHITEJACK5&theme=dark&hide_border=true&include_all_commits=true&count_private=true&layout=compact)
+<div align="center">
+  <img src="./stats.svg" width="420" alt="GitHub stats" />
+  <img src="./streak.svg" width="420" alt="GitHub streak" />
+  <br/>
+  <img src="./langs.svg" width="420" alt="Top languages" />
+  <img src="./year.svg" width="420" alt="Year activity" />
+</div>
 
 ---
 
-### ✍️ Random Dev Quote
+### Random Dev Quote
 
 ![](https://quotes-github-readme.vercel.app/api?type=horizontal&theme=dark)
-
----
-
-<img src="https://komarev.com/ghpvc/?username=WHITEJACK5&icon=5&color=4" alt="profile views" />
 
 ---
 
@@ -160,7 +200,7 @@ database that initialises itself on first run.
 &nbsp;&nbsp;&middot;&nbsp;&nbsp;
 <a href="https://www.linkedin.com/in/devireddybharadwaja"><samp>linkedin.com/in/devireddybharadwaja</samp></a>
 &nbsp;&nbsp;&middot;&nbsp;&nbsp;
-<a href="mailto:poison.white12@gmail.com"><samp>poison.white12@gmail.com</samp></a>
+<a href="mailto:bharadwajareddydevireddy@gmail.com"><samp>bharadwajareddydevireddy@gmail.com</samp></a>
 
 <br/><br/>
 

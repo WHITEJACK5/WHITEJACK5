@@ -1,4 +1,4 @@
-"""Reimplementation of the 21st.dev "Creation of Adam" ASCII/dither recipe.
+﻿"""Reimplementation of the 21st.dev "Creation of Adam" ASCII/dither recipe.
 
 Pipeline, in the order the recipe specifies:
 
@@ -25,7 +25,9 @@ import numpy as np
 from PIL import Image
 
 ROOT = pathlib.Path(__file__).resolve().parent
-SRC = ROOT / "src.jpg"
+REPO = ROOT.parent
+SRC = REPO / "assets" / "creation-of-adam-source.jpg"
+OUT = REPO / "assets" / "creation-of-adam.gif"
 
 # ---------------------------------------------------------------- recipe
 P = {
@@ -57,8 +59,8 @@ PFX = {"bloom": False, "glitch": False, "filmDust": False, "halftone": False,
 LIGHTS_ENABLED = False
 MASK_ENABLED = False
 
-TARGET_W = 780
-FRAMES = 96
+TARGET_W = 600
+FRAMES = 24
 
 # 8x8 Bayer matrix, normalised to 0..1. Ordered dithering keeps the tonal
 # ramp smooth without the noise that error diffusion produces at this size.
@@ -224,16 +226,22 @@ def main():
         phase = i / FRAMES
         arr = render_frame(pooled, lum, cy, cx, phase)
         frames.append(Image.fromarray(arr))
-        if i == 0:
-            frames[0].save(ROOT / "frame0.png")
 
+    # Build one shared palette from all frames and quantize to keep file size small.
+    sheet = Image.new("RGB", (frames[0].width, frames[0].height * len(frames)))
+    for i, f in enumerate(frames):
+        sheet.paste(f, (0, i * f.height))
+    pal_src = sheet.quantize(colors=64, method=Image.MEDIANCUT)
+    frames = [f.quantize(palette=pal_src, dither=Image.NONE) for f in frames]
+
+    OUT.parent.mkdir(parents=True, exist_ok=True)
     frames[0].save(
-        ROOT / "preview.gif",
+        OUT,
         save_all=True, append_images=frames[1:],
-        duration=30, loop=0, optimize=True, disposal=2,
+        duration=40, loop=0, optimize=True, disposal=2,
     )
-    size = (ROOT / "preview.gif").stat().st_size
-    print(f"preview.gif {len(frames)} frames, {size/1024:.0f} KB")
+    size = OUT.stat().st_size
+    print(f"{OUT} {len(frames)} frames, {size/1024:.0f} KB")
 
 
 if __name__ == "__main__":
