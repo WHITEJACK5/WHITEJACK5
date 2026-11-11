@@ -8,7 +8,7 @@ image services, so nothing breaks when an external widget goes down.
 
 | Workflow | Schedule | What it writes |
 | :-- | :-- | :-- |
-| `refresh-stats.yml` | every 3 hours (`0 */3 * * *`) | `stats.svg`, `streak.svg`, `langs.svg`, `year.svg`, `profile.svg`, `yearly.svg`, `repos.svg` |
+| `refresh-stats.yml` | every 3 hours (`0 */3 * * *`) | `stats.svg`, `streak.svg`, `langs.svg`, `year.svg` |
 | `update-readme.yml` | every 3 hours (`0 */3 * * *`) | the table between `<!-- REPOS:START -->` and `<!-- REPOS:END -->` in `README.md` |
 
 Both also expose `workflow_dispatch`, so they can be run on demand. Neither
@@ -71,3 +71,17 @@ python3 scripts/fix_readme.py
 
 `scripts/render_adam.py` regenerates the header GIF from
 `assets/creation-of-adam-source.jpg`.
+
+## Optional extra cards
+
+`profile.svg` (all-time tiles), `yearly.svg` (contributions per calendar year)
+and `repos.svg` (recently pushed repositories) are implemented and tested, but
+the README shows only the four core cards until a real run has produced
+numbers. To emit and commit them again, set `EXTRA_CARDS=1` when running:
+
+```bash
+EXTRA_CARDS=1 GITHUB_TOKEN=<token> GH_LOGIN=<login> python3 scripts/generate_stats.py
+```
+
+Then reference the generated files in the GitHub Stats block of
+`scripts/fix_readme.py`.

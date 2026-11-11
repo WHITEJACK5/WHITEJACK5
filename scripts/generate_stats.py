@@ -634,8 +634,13 @@ def commit_if_changed(files) -> None:
     print("committed")
 
 
-FILES = ["stats.svg", "streak.svg", "langs.svg", "year.svg",
-         "profile.svg", "yearly.svg", "repos.svg"]
+# The extra cards are built and tested, but the README shows the four core
+# cards until a real run has produced numbers. Set EXTRA_CARDS=1 to emit and
+# commit them again.
+EXTRA = ["profile.svg", "yearly.svg", "repos.svg"]
+FILES = ["stats.svg", "streak.svg", "langs.svg", "year.svg"]
+if os.environ.get("EXTRA_CARDS") == "1":
+    FILES += EXTRA
 
 
 def card(name: str, build) -> None:
@@ -648,6 +653,7 @@ def card(name: str, build) -> None:
 
 def main() -> None:
     who = login()
+    extra = os.environ.get("EXTRA_CARDS") == "1"
     frm, to = utc_window()
     print(f"window {frm:%Y-%m-%d} .. {to:%Y-%m-%d} (UTC, pinned)")
 
@@ -692,7 +698,8 @@ def main() -> None:
             days_ago = (dt.datetime.now(dt.timezone.utc) - pushed).days
             repos.append({"name": r["name"], "stars": r["stargazerCount"],
                           "days_ago": max(0, days_ago)})
-        card("repos.svg", lambda: repos_card(repos))
+        if extra:
+            card("repos.svg", lambda: repos_card(repos))
 
     per_year, sums = [], None
     if meta:
@@ -702,7 +709,7 @@ def main() -> None:
         except Exception as e:  # noqa: BLE001
             print(f"warning: lifetime fetch failed: {e}")
 
-    if meta and sums and user:
+    if extra and meta and sums and user:
         try:
             sums["merged"] = merged_prs(who)
         except Exception as e:  # noqa: BLE001
@@ -727,7 +734,7 @@ def main() -> None:
         print(f"lifetime: {data} merged PRs={sums['merged']}")
         card("profile.svg", lambda: profile_card(data))
 
-    if per_year:
+    if extra and per_year:
         card("yearly.svg", lambda: yearly_card(per_year))
 
     commit_if_changed(FILES)
