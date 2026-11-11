@@ -194,13 +194,19 @@ database that initialises itself on first run.
 
 ## GitHub Stats
 
-<img src="./stats.svg" width="520" alt="GitHub stats" />
+<div align="center">
 
-<img src="./streak.svg" width="520" alt="GitHub streak" />
+<img src="./profile.svg" width="860" alt="All-time GitHub activity: commits, pull requests, issues, reviews, stars, public repos, followers, private contributions and years on GitHub" />
 
-<img src="./langs.svg" width="520" alt="Top languages" />
+<img src="./stats.svg" width="420" alt="Contributions in the last year, active days and weekly trend" /> <img src="./streak.svg" width="420" alt="Current and longest contribution streak" />
 
-<img src="./year.svg" width="520" alt="Year activity" />
+<img src="./langs.svg" width="420" alt="Top languages by bytes and by repository" /> <img src="./yearly.svg" width="420" alt="Contributions per calendar year since account creation" />
+
+<img src="./year.svg" width="860" alt="Contribution calendar, one character per day" />
+
+<img src="./repos.svg" width="860" alt="Five most recently pushed public repositories with stars and last push" />
+
+</div>
 
 ---
 

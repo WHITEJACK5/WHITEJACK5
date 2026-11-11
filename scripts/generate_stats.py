@@ -121,6 +121,16 @@ def write(name: str, body: str) -> None:
     print(f"{name:14} {p.stat().st_size:>7,} bytes")
 
 
+def fmt(n) -> str:
+    """Compact enough that a 26px number never outgrows its tile."""
+    n = int(n)
+    if n >= 1_000_000:
+        return f"{n / 1_000_000:.1f}M"
+    if n >= 100_000:
+        return f"{n / 1000:.0f}k"
+    return f"{n:,}"
+
+
 # ---------------------------------------------------------------- hero + spark
 
 
@@ -348,6 +358,93 @@ def year_svg(days) -> str:
     return s
 
 
+# ---------------------------------------------------------------- new cards
+
+
+def grad_defs() -> str:
+    return (
+        '<defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="0">'
+        f'<stop offset="0" stop-color="{INK}"/>'
+        f'<stop offset="1" stop-color="{DIM}"/>'
+        "</linearGradient></defs>"
+    )
+
+
+def profile_card(m: dict) -> str:
+    """3x3 all-time tiles: first row gradient, the rest white for contrast."""
+    w, h = 520, 210
+    s = svg_open(w, h, "All-time GitHub activity",
+                 ("basic-regular", "basic-bold")) + grad_defs()
+    tiles = [
+        ("commits", m["commits"]),
+        ("pull requests", m["prs"]),
+        ("issues opened", m["issues"]),
+        ("reviews", m["reviews"]),
+        ("stars earned", m["stars"]),
+        ("public repos", m["public_repos"]),
+        ("followers", m["followers"]),
+        ("private contributions", m["private"]),
+        ("years on GitHub", m["years"]),
+    ]
+    xs, ys = (20, 180, 340), (58, 116, 174)
+    for i, (label, value) in enumerate(tiles):
+        x, y = xs[i % 3], ys[i // 3]
+        fill = ' fill="url(#g)"' if i < 3 else ""
+        s += (f'<text x="{x}" y="{y}" font-size="26" font-weight="700"{fill}>'
+              f'{esc(fmt(value))}</text>')
+        s += t(x, y + 19, label, 10, cls="d")
+    s += "</svg>"
+    return s
+
+
+def yearly_card(per_year) -> str:
+    """Contributions per calendar year, last six at most."""
+    rows = per_year[-6:]
+    w, h = 520, 190
+    s = svg_open(w, h, "Contributions per calendar year",
+                 ("basic-regular", "basic-bold")) + grad_defs()
+    s += t(20, 30, "contributions per year", 13, weight=700)
+
+    x0, x1 = 20, w - 20
+    base = 134
+    slot = (x1 - x0) / max(1, len(rows))
+    bar_w = min(44.0, slot * 0.5)
+    top = max((v for _, v in rows), default=0) or 1
+
+    for i, (yr, v) in enumerate(rows):
+        cx = x0 + slot * i + slot / 2
+        bh = (v / top) * 70
+        s += (f'<rect x="{cx - bar_w / 2:.1f}" y="{base - bh:.1f}" '
+              f'width="{bar_w:.1f}" height="{bh:.1f}" rx="4" fill="url(#g)"/>')
+        s += t(cx, base - bh - 7, fmt(v), 10, cls="d", anchor="middle")
+        s += t(cx, base + 18, str(yr), 10, cls="d", anchor="middle")
+    s += t(20, h - 12, "calendar years since account creation", 10, cls="d")
+    s += "</svg>"
+    return s
+
+
+def repos_card(repos) -> str:
+    """Five most recently pushed public, non-fork repositories."""
+    w, h = 520, 220
+    s = svg_open(w, h, "Recently pushed repositories",
+                 ("basic-regular", "basic-bold"))
+    s += t(20, 30, "recently pushed", 13, weight=700)
+
+    y = 60
+    for r in repos[:5]:
+        name = r["name"]
+        if len(name) > 26:
+            name = name[:25] + "\u2026"
+        s += f'<circle cx="26" cy="{y - 4}" r="3.2" fill="{DIM}"/>'
+        s += t(38, y, name, 12)
+        s += t(w - 150, y, f'{r["stars"]} stars', 10, cls="d", anchor="end")
+        s += t(w - 20, y, f'pushed {r["days_ago"]}d ago', 10, cls="d",
+               anchor="end")
+        y += 30
+    s += "</svg>"
+    return s
+
+
 # ---------------------------------------------------------------- fetch
 
 
@@ -364,6 +461,38 @@ query($login:String!,$from:DateTime!,$to:DateTime!){
 }
 """
 
+YEAR_Q = """
+query($login:String!,$from:DateTime!,$to:DateTime!){
+  user(login:$login){
+    contributionsCollection(from:$from,to:$to){
+      totalCommitContributions
+      totalPullRequestContributions
+      totalIssueContributions
+      totalPullRequestReviewContributions
+      restrictedContributionsCount
+      contributionCalendar{ totalContributions }
+    }
+  }
+}
+"""
+
+META_Q = """
+query($login:String!){
+  user(login:$login){
+    createdAt
+    followers{ totalCount }
+    following{ totalCount }
+    repositories(first:1,privacy:PUBLIC,isFork:false,ownerAffiliations:OWNER){
+      totalCount
+    }
+  }
+}
+"""
+
+MERGED_Q = """
+query($q:String!){ search(query:$q,type:ISSUE){ issueCount } }
+"""
+
 USER_Q = """
 query($login:String!){
   user(login:$login){
@@ -371,6 +500,13 @@ query($login:String!){
                  orderBy:{field:PUSHED_AT,direction:DESC}){
       nodes{
         name
+        url
+        description
+        pushedAt
+        stargazerCount
+        forkCount
+        isFork
+        isArchived
         primaryLanguage{ name }
         languages(first:10,orderBy:{field:SIZE,direction:DESC}){
           edges{ size node{ name } }
@@ -433,6 +569,53 @@ def compute_streaks(days) -> dict:
     }
 
 
+def year_windows(created_year: int):
+    """Half-year windows, each under the API's one-year span limit.
+
+    A leap calendar year is 366 days, which contributionsCollection rejects, so
+    every year is queried in two halves and summed. Halves keep the whole-year
+    total exact without ever exceeding the limit.
+    """
+    now = dt.datetime.now(dt.timezone.utc)
+    top = now.replace(hour=23, minute=59, second=59, microsecond=0)
+    out = []
+    for y in range(created_year, now.year + 1):
+        halves = [
+            (dt.datetime(y, 1, 1, tzinfo=dt.timezone.utc),
+             dt.datetime(y, 6, 30, 23, 59, 59, tzinfo=dt.timezone.utc)),
+            (dt.datetime(y, 7, 1, tzinfo=dt.timezone.utc),
+             dt.datetime(y, 12, 31, 23, 59, 59, tzinfo=dt.timezone.utc)),
+        ]
+        for frm, end in halves:
+            if frm > top:
+                continue
+            out.append((y, frm, min(end, top)))
+    return out
+
+
+def lifetime(who: str, created_year: int):
+    """Sum per-year contribution counts and keep each year's total."""
+    sums = {"commits": 0, "prs": 0, "issues": 0, "reviews": 0, "private": 0}
+    by_year: dict[int, int] = {}
+    for y, frm, to in year_windows(created_year):
+        d = gql(YEAR_Q, {"login": who, "from": frm.isoformat(),
+                         "to": to.isoformat()})
+        c = d["user"]["contributionsCollection"]
+        sums["commits"] += c["totalCommitContributions"]
+        sums["prs"] += c["totalPullRequestContributions"]
+        sums["issues"] += c["totalIssueContributions"]
+        sums["reviews"] += c["totalPullRequestReviewContributions"]
+        sums["private"] += c["restrictedContributionsCount"]
+        by_year[y] = by_year.get(y, 0) + c["contributionCalendar"]["totalContributions"]
+    return sums, sorted(by_year.items())
+
+
+def merged_prs(who: str) -> int:
+    q = f"author:{who} type:pr is:merged"
+    d = gql(MERGED_Q, {"q": q})
+    return int(d["search"]["issueCount"])
+
+
 def commit_if_changed(files) -> None:
     if not files:
         return
@@ -451,33 +634,103 @@ def commit_if_changed(files) -> None:
     print("committed")
 
 
+FILES = ["stats.svg", "streak.svg", "langs.svg", "year.svg",
+         "profile.svg", "yearly.svg", "repos.svg"]
+
+
+def card(name: str, build) -> None:
+    """A failure in one card must leave its previous SVG in place."""
+    try:
+        write(name, build())
+    except Exception as e:  # noqa: BLE001 - one bad card must not sink the job
+        print(f"warning: {name} not updated: {e}")
+
+
 def main() -> None:
     who = login()
     frm, to = utc_window()
     print(f"window {frm:%Y-%m-%d} .. {to:%Y-%m-%d} (UTC, pinned)")
 
-    c = gql(CONTRIB_Q, {"login": who, "from": frm.isoformat(),
-                        "to": to.isoformat()})
-    cal = c["user"]["contributionsCollection"]["contributionCalendar"]
-    days = flatten(cal["weeks"])
+    days, cal = [], None
+    try:
+        c = gql(CONTRIB_Q, {"login": who, "from": frm.isoformat(),
+                            "to": to.isoformat()})
+        cal = c["user"]["contributionsCollection"]["contributionCalendar"]
+        days = flatten(cal["weeks"])
+    except Exception as e:  # noqa: BLE001
+        print(f"warning: contributions fetch failed: {e}")
 
-    u = gql(USER_Q, {"login": who})["user"]
+    user = None
+    try:
+        user = gql(USER_Q, {"login": who})["user"]
+    except Exception as e:  # noqa: BLE001
+        print(f"warning: repository fetch failed: {e}")
+
+    meta = None
+    try:
+        meta = gql(META_Q, {"login": who})["user"]
+    except Exception as e:  # noqa: BLE001
+        print(f"warning: account fetch failed: {e}")
 
     global streak_stats
-    streak_stats = compute_streaks(days)
+    if days:
+        streak_stats = compute_streaks(days)
+        totals = {
+            "total": cal["totalContributions"],
+            "active_days": sum(1 for d in days if d["count"] > 0),
+            "weeks": weekly(days),
+        }
+        card("stats.svg", lambda: hero(days, totals))
+        card("streak.svg", lambda: streak(days))
+        card("year.svg", lambda: year_svg(days))
 
-    totals = {
-        "total": cal["totalContributions"],
-        "active_days": sum(1 for d in days if d["count"] > 0),
-        "weeks": weekly(days),
-    }
+    if user:
+        card("langs.svg", lambda: langs(user))
+        repos = []
+        for r in user["repositories"]["nodes"][:5]:
+            pushed = dt.datetime.fromisoformat(r["pushedAt"].replace("Z", "+00:00"))
+            days_ago = (dt.datetime.now(dt.timezone.utc) - pushed).days
+            repos.append({"name": r["name"], "stars": r["stargazerCount"],
+                          "days_ago": max(0, days_ago)})
+        card("repos.svg", lambda: repos_card(repos))
 
-    write("stats.svg", hero(days, totals))
-    write("streak.svg", streak(days))
-    write("langs.svg", langs(u))
-    write("year.svg", year_svg(days))
+    per_year, sums = [], None
+    if meta:
+        try:
+            created_year = dt.date.fromisoformat(meta["createdAt"][:10]).year
+            sums, per_year = lifetime(who, created_year)
+        except Exception as e:  # noqa: BLE001
+            print(f"warning: lifetime fetch failed: {e}")
 
-    commit_if_changed(["stats.svg", "streak.svg", "langs.svg", "year.svg"])
+    if meta and sums and user:
+        try:
+            sums["merged"] = merged_prs(who)
+        except Exception as e:  # noqa: BLE001
+            print(f"warning: merged PR count failed: {e}")
+            sums["merged"] = 0
+
+        nodes = user["repositories"]["nodes"] if user else []
+        stars = sum(r["stargazerCount"] for r in nodes
+                    if not r["isFork"] and not r["isArchived"])
+        years = max(1, dt.date.today().year - created_year + 1)
+        data = {
+            "commits": sums["commits"],
+            "prs": sums["prs"],
+            "issues": sums["issues"],
+            "reviews": sums["reviews"],
+            "stars": stars,
+            "public_repos": meta["repositories"]["totalCount"],
+            "followers": meta["followers"]["totalCount"],
+            "private": sums["private"],
+            "years": years,
+        }
+        print(f"lifetime: {data} merged PRs={sums['merged']}")
+        card("profile.svg", lambda: profile_card(data))
+
+    if per_year:
+        card("yearly.svg", lambda: yearly_card(per_year))
+
+    commit_if_changed(FILES)
 
 
 if __name__ == "__main__":

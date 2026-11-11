@@ -1,7 +1,7 @@
 ﻿name: update readme repos
 on:
   schedule:
-    - cron: "0 */6 * * *"
+    - cron: "0 */3 * * *"
   workflow_dispatch:
   # deliberately no `push`: this job commits, and a push trigger would loop
 permissions:
@@ -16,7 +16,7 @@ jobs:
           python-version: "3.11"
       - name: update latest repositories
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.STATS_TOKEN || secrets.GITHUB_TOKEN }}
           GH_LOGIN: ${{ github.repository_owner }}
         run: python3 scripts/update_repos.py
       - name: commit and push if changed
