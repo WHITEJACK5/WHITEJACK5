@@ -59,7 +59,7 @@ PFX = {"bloom": False, "glitch": False, "filmDust": False, "halftone": False,
 LIGHTS_ENABLED = False
 MASK_ENABLED = False
 
-TARGET_W = 600
+TARGET_W = 900
 FRAMES = 24
 
 # 8x8 Bayer matrix, normalised to 0..1. Ordered dithering keeps the tonal

@@ -20,7 +20,7 @@ repos_inner = m.group(1) if m else "\n"
 
 body = f"""<div align="center">
 
-<img src="./assets/creation-of-adam.gif" width="600"
+<img src="./assets/creation-of-adam.gif" width="900"
      alt="Dithered animation of Michelangelo's Creation of Adam, rendered from this repository" />
 
 <br/>
@@ -194,13 +194,13 @@ database that initialises itself on first run.
 
 ## GitHub Stats
 
-<div align="center">
-  <img src="./stats.svg" width="420" alt="GitHub stats" />
-  <img src="./streak.svg" width="420" alt="GitHub streak" />
-  <br/>
-  <img src="./langs.svg" width="420" alt="Top languages" />
-  <img src="./year.svg" width="420" alt="Year activity" />
-</div>
+<img src="./stats.svg" width="520" alt="GitHub stats" />
+
+<img src="./streak.svg" width="520" alt="GitHub streak" />
+
+<img src="./langs.svg" width="520" alt="Top languages" />
+
+<img src="./year.svg" width="520" alt="Year activity" />
 
 ---
 
