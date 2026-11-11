@@ -130,6 +130,14 @@ database that initialises itself on first run.
 
 ### Latest repositories
 <!-- REPOS:START -->
+| Repository | About | Language |
+| :-- | :-- | :-- |
+| [rag-basics](https://github.com/WHITEJACK5/rag-basics) |  | Python |
+| [RegRAG](https://github.com/WHITEJACK5/RegRAG) |  | Python |
+| [loan-default-risk](https://github.com/WHITEJACK5/loan-default-risk) | Loan default risk API — LightGBM isotonic PD on 1.34M LendingClub (temporal), PR-AUC 0.413 Brier 0.155 profit +$7.4M thr 0.05 SHAP FastAPI Docker MLflow. Live Gradio Demo. | Python |
+| [white-collars](https://github.com/WHITEJACK5/white-collars) |  | JavaScript |
+| [DYNAMIC-QR](https://github.com/WHITEJACK5/DYNAMIC-QR) |  | Python |
+| [ML_project](https://github.com/WHITEJACK5/ML_project) |  | Jupyter Notebook |
 <!-- REPOS:END -->
 
 ---
