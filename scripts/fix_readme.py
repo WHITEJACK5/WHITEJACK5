@@ -192,18 +192,6 @@ database that initialises itself on first run.
 
 ---
 
-## GitHub Stats
-
-<img src="./stats.svg" width="520" alt="Contributions in the last year, active days and weekly trend" />
-
-<img src="./streak.svg" width="520" alt="Current and longest contribution streak" />
-
-<img src="./langs.svg" width="520" alt="Top languages by bytes and by repository" />
-
-<img src="./year.svg" width="520" alt="Contribution calendar, one character per day" />
-
----
-
 ### Random Dev Quote
 
 ![](https://quotes-github-readme.vercel.app/api?type=horizontal&theme=dark)
